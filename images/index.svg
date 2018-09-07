@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="362px" height="223.45px" viewBox="0, 0, 362, 223.45">
+  <defs><filter x="-22%" y="-23%" width="144%" height="194.7810677433827%" id="shadow">
+  <feOffset dx="0" dy="25" in="SourceAlpha" result="so"/>
+  <feGaussianBlur stdDeviation="27.5" in="so" result="sb"/>
+  <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"  type="matrix" in="sb" result="sm"/>
+  <feMerge>
+    <feMergeNode in="sm"/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="tb">
+      <stop stop-color="#FFFFFF" offset="0%"/>
+      <stop stop-color="#F5F4F5" offset="5%"/>
+      <stop stop-color="#D3D3D3" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g filter="url(#shadow)" transform="translate(55, 25)" fill="none">
+    <rect width="250" height="111.45" rx="6" stroke="#000000" stroke-opacity="0.2" fill="#FFFFFF"/>
+
+    <path d="M6,0 C3,0 0,3 0,6 L0,22 L250,22 L250,6 C250,3 247,0 244,0 Z" fill="url(#tb)"/>
+
+    <text x="125" y="16" font-family="HelveticaNeue, Helvetica Neue" font-size="13" letter-spacing="0.4" fill="#464646" text-anchor="middle">
+      ⚡️Terminal
+    </text>
+    <g transform="translate(9, 6)">
+      <g>
+        <circle fill="#FF5F52" cx="5" cy="5" r="5.25"/>
+        <circle stroke="#E33E32" stroke-width="1" cx="5" cy="5" r="5.5"/>
+      </g>
+      <g>
+        <circle fill="#FFBE05" cx="25" cy="5" r="5.25"/>
+        <circle stroke="#E2A100" stroke-width="1" cx="25" cy="5" r="5.5"/>
+      </g>
+      <g>
+        <circle fill="#15CC35" cx="45" cy="5" r="5.25"/>
+        <circle stroke="#17B230" stroke-width="1" cx="45" cy="5" r="5.5"/>
+      </g>
+    </g>
+
+    <path d="M250,22 L250,105.45 C 250 108.45, 247 111.45, 244 111.45 L6,111.45 C 3 111.45, 0 108.45, 0 105.45 L0,22 Z" fill="#FFFFFF"/>
+
+    <line x1="0" y1="22.5" x2="250" y2="22.5" stroke="#7E7E7E" shape-rendering="crispEdges"/>
+
+    <g transform="translate(5, 28)" fill="#000000" font-family="Courier" font-size="14">
+      <text x="33.61" y="14.55">    &#x1F3B4; THE &#x1F5D3; </text><text x="117.62" y="14.55" font-weight="bold" fill="#4169E1">DAILY</text><rect x="176.43" y="0" width="8.4" height="19" fill="#DAA520" opacity="1"/><rect x="184.83" y="0" width="16.8" height="19" fill="#32CD32" opacity="1"/><text x="184.83" y="14.55"> &#x33D2;</text><rect x="0" y="38" width="58.81" height="19" fill="#FFFF00" opacity="1"/><text x="0" y="52.55">&#xA9;&#xFE0F; 2018</text><rect x="67.21" y="38" width="109.22" height="19" fill="#ADFF2F" opacity="1"/><text x="67.21" y="52.55">Art Deco Code</text>
+    </g>
+  </g>
+</svg>

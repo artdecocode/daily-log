@@ -2,11 +2,9 @@
 
 %NPM: daily-log%
 
-`daily-log` is Description of work done each day.
+`daily-log` is a collection of descriptions of work done each day.
 
-```sh
-yarn add -E daily-log
-```
+![terminal](images/terminal.svg)
 
 ## Table Of Contents
 
