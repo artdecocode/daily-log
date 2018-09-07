@@ -1,0 +1,43 @@
+{
+  "name": "daily-log",
+  "version": "0.0.0",
+  "description": "Description of work done each day.",
+  "main": "build",
+  "scripts": {
+    "t": "zoroaster -a",
+    "test": "yarn t test/spec",
+    "test-build": "ALAMODE_ENV=test-build yarn test",
+    "test-all": "yarn-s test test-build",
+    "test-watch": "yarn test -w",
+    "lint": "eslint .",
+    "doc": "NODE_DEBUG=doc doc documentary -o README.md",
+    "b": "alamode src -o build",
+    "build": "yarn-s b doc",
+    "rec": "NODE_DEBUG=appshot appshot -T 23 -a Terminal -y 150 -f",
+    "e": "node example",
+    "example/": "yarn e example/example.js"
+  },
+  "files": [
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/artdecocode/daily-log.git"
+  },
+  "keywords": [
+    "daily-log"
+  ],
+  "author": "Anton <anton@adc.sh>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artdecocode/daily-log/issues"
+  },
+  "homepage": "https://github.com/artdecocode/daily-log#readme",
+  "devDependencies": {
+    "alamode": "1.4.0",
+    "documentary": "1.11.0",
+    "eslint-config-artdeco": "1.0.1",
+    "yarn-s": "1.1.0",
+    "zoroaster": "3.0.0"
+  }
+}
