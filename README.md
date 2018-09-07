@@ -8,14 +8,16 @@
 
 ## Table Of Contents
 
-- [Table Of Contents](#table-of-contents)
-- [September](#september)
-  * [5 Wednesday](#5-wednesday)
-  * [6 Thursday](#6-thursday)
-- [API](#api)
-  * [`dailyLog(arg1: string, arg2?: boolean)`](#dailylogarg1-stringarg2-boolean-void)
-- [TODO](#todo)
-- [Copyright](#copyright)
+- [daily-log](#daily-log)
+  * [Table Of Contents](#table-of-contents)
+- [2018](#2018)
+  * [September](#september)
+    * [5 Wednesday](#5-wednesday)
+    * [6 Thursday](#6-thursday)
+  * [API](#api)
+    * [`dailyLog(arg1: string, arg2?: boolean)`](#dailylogarg1-stringarg2-boolean-void)
+  * [TODO](#todo)
+  * [Copyright](#copyright)
 
 # 2018
 
@@ -98,6 +100,8 @@ Finished off with a complete good-looking terminal template which could also be 
 ![terminal](images/terminal.svg)
 
 **Future** Integrate the terminal generation into _Documentary_, make animated terminal in addition to static, release as a separate package (`svag`?). Implement caching for _Documentary_.
+
+1. Timer: 8.38 + (5.3) = _13 hours 41 min_
 
 ## API
 
