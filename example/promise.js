@@ -13,12 +13,13 @@ const before = async () => {
   } catch ({ stack }) {
     console.log(stack) // error stack is there
   }
-})
+})()
 
 ;(async () => {
   try {
     await after()
   } catch ({ stack }) {
+    console.log('\n======\n')
     console.log(stack) // cuts at anonymous
   }
-})
+})()

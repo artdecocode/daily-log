@@ -27,7 +27,53 @@
 
 Working on hiding error stack for the `restream` and starting to implement it in the `erotic`. Figuring out that Node.js [hides an async stack](https://github.com/nodejs/node/issues/11865) behind `<anonymous>`, but only if error was thrown after the first `await`.
 
-%EXAMPLE example/promise%
+```js
+const after = async () => {
+  await new Promise(r => setTimeout(r, 100))
+  throw new Error('example error after await')
+}
+
+const before = async () => {
+  throw new Error('example error before await')
+}
+
+(async () => {
+  try {
+    await before()
+  } catch ({ stack }) {
+    console.log(stack) // error stack is there
+  }
+})()
+
+;(async () => {
+  try {
+    await after()
+  } catch ({ stack }) {
+    console.log('\n======\n')
+    console.log(stack) // cuts at anonymous
+  }
+})()
+```
+
+```
+Error: example error before await
+    at before (/Users/zavr/adc/daily-log/example/promise.js:7:9)
+    at /Users/zavr/adc/daily-log/example/promise.js:12:11
+    at Object.<anonymous> (/Users/zavr/adc/daily-log/example/promise.js:16:3)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:191:16)
+
+======
+
+Error: example error after await
+    at after (/Users/zavr/adc/daily-log/example/promise.js:3:9)
+    at <anonymous>
+```
 
 - _Documentary_:
  + `v1.14`: refactor TOC, allow h1, detect underlined titles
