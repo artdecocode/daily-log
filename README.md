@@ -4,7 +4,7 @@
 
 `daily-log` is a collection of descriptions of work done each day.
 
-![terminal](images/terminal.svg)
+![terminal](images/index.svg)
 
 ## Table Of Contents
 
