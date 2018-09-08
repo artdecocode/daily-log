@@ -106,7 +106,9 @@ Finished off with a complete good-looking terminal template which could also be 
 
 ## 7 Friday
 
-Viva la [`SVaG`](https://svag.io)! As continuation from yesterday's work on making a terminal SVG, I started the day by figuring out that the best course of action would be to create a package which would export multiple UI elements as SVGs. The elements can be dynamically generated, therefore a whole library was written. In the beginning, I just worked on the `svag` package and was putting lib methods and UI elements such as `terminal` in there, but quickly changed to registering a new organisation on `npm` [`svag`](https://www.npmjs.com/org/svag) and on GitHub, and used `mnp` to spawn packages.
+Viva la [`SVaG`](https://svag.co)! As continuation from yesterday's work on making a terminal SVG, I started the day by figuring out that the best course of action would be to create a package which would export multiple UI elements as SVGs. The elements can be dynamically generated, therefore a whole library was written. In the beginning, I just worked on the `svag` package and was putting lib methods and UI elements such as `terminal` in there, but quickly changed to registering a new organisation on `npm` [`svag`](https://www.npmjs.com/org/svag) and on GitHub, and used `mnp` to spawn packages.
+
+<img alt="corners" src="https://raw.github.com/artdecocode/daily-log/master/images/window.svg?sanitize=true">
 
 The GitHub org name `svag` was taken, and the request to free it due to inactivity was denied as there was some private activity. I also got a 2-month old response saying that `artdeco` org is also not inactive, but I could try the trademark claim. Therefore, the org `svagjs` was registered although I'm not a big fan of adding `js` at the end because it's so easy, unless it's something like `mnpjs` because npm also uses `npmjs.com` and `mnp` is a play on `npm`.
 
@@ -170,7 +172,14 @@ console.log(image)
 writeFileSync('images/rounded-corners.svg', image)
 ```
 
-%FORK: example example/svag.js%
+```svg
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0, 0, 110, 110" width="110px" height="110px"><g transform="translate(2,2)"><g stroke="green" fill="red" stroke-width="2">
+  <path d="M0,50 C 0 25, 25 0, 50 0"/>
+  <path d="M50,0 C 75 0, 100 25, 100 50"/>
+  <path d="M100,50 C 100 75, 75 100, 50 100"/>
+  <path d="M50,100 C 25 100, 0 75, 0 50"/>
+</g></g></svg>
+```
 
 Trying to use `I` in the log, although it does sound more personal, but I'm not gonna write `we` because it's too formal.
 
@@ -183,7 +192,9 @@ There's an [`asciinema`](https://asciinema.org/) project which allows to play te
 1. Implement the terminal output into the simple window.
 1. Animate the terminal output.
 1. Embed `@svag/window` into documentary when the terminal is ready  (possibly as a plugin rather than dependency?), because waiting on `ansi-to-svg` to merge the PR can last forever, and we want our own package to do that, it's not difficult.
-1. move `clean-stack` to art deco scope as still waiting on the PR to get merged.
+1. move the `clean-stack` to art deco scope as still waiting on the PR to get merged.
+
+1. Timer: (10.5 - 5.3 = 5.2) + (7.28) = _12 hours 30 min_
 
 ## API
 
