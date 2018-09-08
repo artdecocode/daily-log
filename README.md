@@ -194,7 +194,7 @@ There's an [`asciinema`](https://asciinema.org/) project which allows to play te
 1. Embed `@svag/window` into documentary when the terminal is ready  (possibly as a plugin rather than dependency?), because waiting on `ansi-to-svg` to merge the PR can last forever, and we want our own package to do that, it's not difficult.
 1. move the `clean-stack` to art deco scope as still waiting on the PR to get merged.
 
-1. Timer: (10.5 - 5.3 = 5.2) + (7.28) = _12 hours 30 min_
+> Timer: (10.5 - 5.3 = 5.2) + (7.28) = _12 hours 30 min_
 
 ## API
 
