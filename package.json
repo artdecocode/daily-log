@@ -34,6 +34,7 @@
   },
   "homepage": "https://github.com/artdecocode/daily-log#readme",
   "devDependencies": {
+    "@svag/lib": "1.0.0",
     "alamode": "1.4.0",
     "documentary": "1.14.0",
     "eslint-config-artdeco": "1.0.1",
