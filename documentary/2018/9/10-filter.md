@@ -1,9 +1,32 @@
 
 ### 10 Monday
 
-When checking out the repository on the phone using mobile Safari, the image did not look sharp, because the filter made it into a raster and the quality was lost.
+When checking out the repository on the phone using mobile Safari, the image did not look sharp, because the filter made it into a raster and the quality was lost. The fix was to implement the shadow as a separate element. The problem did not arise on the desktop because images were not resized, however now with the example below it is clear that it could also have happened for larger images.
 
-![compare shadows](images/18-10/compare.png)
+<table>
+<thead>
+ <tr>
+  <th>
+   Shadow On Window
+  </th>
+  <th>
+   Standalone Shadow
+  </th>
+ </tr>
+</thead>
+<tbody>
+  <tr>
+   <td>
+   <img alt="Shadow on Window" src="https://raw.github.com/artdecocode/daily-log/master/images/window.svg?sanitize=true">
+   </td>
+   <td>
+   <img alt="Standalone Shadow" src="https://raw.github.com/artdecocode/daily-log/master/images/window2.svg?sanitize=true">
+   </td>
+  </tr>
+</tbody>
+</table>
+
+![Compare Shadows on iPhone](images/18-10/compare.png)
 
 There were a number of solutions that were thought about and tried out.
 
