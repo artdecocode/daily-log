@@ -83,9 +83,11 @@ Time spent on the problem: ~3 hours.
 
 <hr/>
 
+First thing after sleep was to register the [`artd.eco`](t) domain which I absolutely love. This is one of the best things I've ever registered. Happy happy happy. I might save up $3000 and buy `artdeco.io` later since it seems to be the only available and somewhat affordable one.
+
 The second part of the day was spent on implementing the shadow in the `@svag` org by updating the library as well as other packages. Some extra attributes could be omitted as they had a default value (e.g., gradient starting at `y=0%` and same for the line behind the toolbar, `x=0`).
 
-The `@svag/lib` was improved in version 2 for better `createElement` signature which would take the name of the element as the first argument as it was compulsory anyway. The `rect` element was added and its documentation copied from the MDN website, however in future this process can be automated.
+The `@svag/lib` was improved in version 2 for better `makeElement` signature which would take the name of the element as the first argument as it was compulsory anyway. The `rect` element was added and its documentation copied from the MDN website, however in future this process can be automated. The `@svag/toolbar`, `@svag/shadow` and `@svag/window` were updated to use the newer version of `makeElement`, and some TODOs were fixed in them as well, such as absolute paths to the SVG files. The `@svag/shadow` was also updated to be a separate element to prevent the loss of quality of resize, and incorporated into the `@svag/window`.
 
 The `@svag` packages can benefit from `alamode` implementing a transform to parse `xml` in the same way as `jsx` parsing works. This means that the code could be transformed into a developer friendly version, e.g., instead of writing
 
@@ -108,3 +110,33 @@ The shadow was implemented, and even improved by removing merging it with the wi
 
 ![clear-shadow](images/18-10/shadow.png)
 
+There is a domain zone `.sucks`. This would be suitable for [`npm.sucks`](t) because for some reason they don't support relative urls on the `@svag` packages. Initially I thought it was the case due to trying to embed SVGs but it also does not work with PNGs. This could be because the org was named `svagjs` before, however I'm not sure. +1 in the list of things why `npm` sucks. The domains are expensive however, ~$260.
+
+**[`git.sucks`](t)** After implementing the shadow, I was so exhausted by all the chore jobs that I had to do such as linking the scoped packages so that they can interact together, building them when needed, documenting and building documentation, reverting commits when things went wrong, running `build` and `test-build` before releasing multiple times, unlinking packages, installing new versions so that they can be tested, writing changelog messages _etc_. I realised I use `git` command to much, and instead of coding have to deal with all the unnecessary manual work. What I really want to do is:
+
+1. Code
+1. Test
+1. Document
+
+The mostly `build` and `commit` phase should be taken out of the process completely. There should be a new branch for a feature in each of the relevant packages, which would get updated w/ build and doc automatically, and then merged when everything is ready in other packages, which would then unlink the package and install it from the NPM to test against the published version. I produce a lot of commits and my motto is `commits are free` because it doesn't really matter how many commits there are. But also, if it doesn't matter, there should be no reason why I couldn't do with a single commit for a feature. Or there could be at least multiple commits for different parts of the code, but there should not be manual commits for any of the `build` jobs, be it the code or documentation. I think `moderne` is the package which could do it, however it's not just the question of using a package, but of organisation of work and habits, therefore I'm still trying to come up with requirements. Some of them are:
+
+1. Define a group of packages, e.g., `@svag/window`, `@svag/lib`, _etc_.
+1. Create a git branch for each of them when working on a new feature.
+1. Link the packages together.
+1. Monitor changes to the code, build and run tests against build. Also build documentation.
+1. Keep pushing to GitHub whenever new code is ready. There should be no manual git push and the `git` command should be forgotten.
+1. Possibly there should be a plugin for VS Code which would show the status of the group, however this can be done in the CLI as well.
+1. Possibly a GUI interface to prepare a merge and publish, with a changelog message, however this could also be done in the CLI.
+1. Unlinking packages and installing published versions, taking them off the stack one by one.
+
+[`git.live`](t) should allow to focus on actual coding and not writing commit messages and force pushing to the remote. It's really tiring. The problem is probably met by other developers as well, and it could be a great tool to make. `documentary` is actually somewhat solving it for documentation by allowing to reset commits and push new versions automatically, however there's still no support for updating examples and including them in commits. `moderne` would then extend this logic to the `build` folder as well, although this could be done with `alamode --watch`.
+
+The daily log could get its own domain, such as [`dailylog.co`](t). Gosh I love domains, especially `.co`.
+
+**FUTURE**
+
+- Add the `xml` parsing in ALaMode via `jsx` module loader.
+- Implement the watch mode in `alamode`.
+- Watch and auto-commit changes to examples in `documentary`.
+
+> Timer: 9.30 + 3.12 = 12.42 Hours
