@@ -26,7 +26,7 @@ When checking out the repository on the phone using mobile Safari, the image did
 </tbody>
 </table>
 
-![Compare Shadows on iPhone](images/18-10/compare.png)
+<a href="https://github.com/artdecocode/daily-log/blob/master/shadow.md">![Compare Shadows on iPhone](images/18-10/compare.png)</a>
 
 There were a number of solutions that were thought about and tried out.
 
