@@ -18,11 +18,11 @@
       * [`git.sucks`](#gitsucks)
       * [`git.live`](#gitlive)
       * [`dailylog.co`](#dailylogco)
-  * [11 Tuesday](#11-tuesday)
-  * [12 Wednesday](#12-wednesday)
+    * [11 Tuesday](#11-tuesday)
+    * [12 Wednesday](#12-wednesday)
     * [5 Wednesday](#5-wednesday)
     * [6 Thursday](#6-thursday)
-  * [7 Friday](#7-friday)
+    * [7 Friday](#7-friday)
   * [API](#api)
     * [`dailyLog(arg1: string, arg2?: boolean)`](#dailylogarg1-stringarg2-boolean-void)
   * [TODO](#todo)
@@ -176,12 +176,12 @@ The daily log could get its own domain, such as <a name="dailylogco">`dailylog.c
 
 > Timer: 9.30 + 3.12 = 12.42 Hours
 
-## 11 Tuesday
+### 11 Tuesday
 
 Market research for demimonde and coming up with ideas.
 
 
-## 12 Wednesday
+### 12 Wednesday
 
 Today I continued the research on Demimonde, and made an offer for the domain name I want. Gladly it is for sale and although the price is more than a few thousand, it is a reasonable price for that domain. Here is a link to some [notable sales](https://www.gritbrokerage.com/notable-sales).
 
@@ -400,7 +400,7 @@ Finished off with a complete good-looking terminal template which could also be 
 
 1. Timer: 8.38 + (5.3) = _13 hours 41 min_
 
-## 7 Friday
+### 7 Friday
 
 Viva la [`SVaG`](https://svag.co)! As continuation from yesterday's work on making a terminal SVG, I started the day by figuring out that the best course of action would be to create a package which would export multiple UI elements as SVGs. The elements can be dynamically generated, therefore a whole library was written. In the beginning, I just worked on the `svag` package and was putting lib methods and UI elements such as `terminal` in there, but quickly changed to registering a new organisation on `npm` [`svag`](https://www.npmjs.com/org/svag) and on GitHub, and used `mnp` to spawn packages.
 

@@ -1,5 +1,5 @@
 
-## 12 Wednesday
+### 12 Wednesday
 
 Today I continued the research on Demimonde, and made an offer for the domain name I want. Gladly it is for sale and although the price is more than a few thousand, it is a reasonable price for that domain. Here is a link to some [notable sales](https://www.gritbrokerage.com/notable-sales).
 
