@@ -3,8 +3,7 @@ import { roundedCorner, svg, makeElement } from '@svag/lib'
 
 const drawPath = (from, to) => {
   const d = `M${from.x},${from.y} ${roundedCorner(from, to)}`
-  const p = makeElement({
-    name: 'path',
+  const p = makeElement('path', {
     attributes: {
       d,
     },
@@ -12,24 +11,28 @@ const drawPath = (from, to) => {
   return p
 }
 const corners = [
-  drawPath({x: 0, y: 50}, { x: 50, y: 0}),
-  drawPath({x: 50, y: 0}, {x: 100, y: 50}),
-  drawPath({x: 100, y: 50}, {x: 50, y: 100}),
-  drawPath({x: 50, y: 100}, {x: 0, y: 50}),
+  drawPath({ x: 0, y: 50 }, { x: 50, y: 0 }),
+  drawPath({ x: 50, y: 0 }, { x: 100, y: 50 }),
+  drawPath({ x: 100, y: 50 }, { x: 50, y: 100 }),
+  drawPath({ x: 50, y: 100 }, { x: 0, y: 50 }),
 ]
 
-const g = makeElement({
-  name: 'g',
+const g = makeElement('g', {
   attributes: {
     stroke: 'green',
     fill: 'red',
     'stroke-width': '2',
   },
-  content: `\n  ${corners.join('\n  ')}\n`,
+  content: corners,
 })
 
 const image = svg({
-  content: `<g transform="translate(2,2)">${g}</g>`,
+  content: makeElement('g', {
+    attributes: {
+      transform: 'translate(2,2)',
+    },
+    content: g,
+  }),
   width: 110,
   height: 110,
   stretch: false,
