@@ -41,7 +41,7 @@ It is really interesting how orgs and package name spaces can work so well toget
 
 **NEW PACKAGES**
 
-- [`temp-context`](https://github.com/wrote/clone): provide each test with a new temp folder, which is a blank sheet (thx 🇰🇪 for the analogy) on which a test can write. At the end of the test, a snapshot of the sheet can be taken to compare against expected results.
+- [`temp-context`](https://github.com/wrote/temp-context): provide each test with a new temp folder, which is a blank sheet (thx 🇰🇪 for the analogy) on which a test can write. At the end of the test, a snapshot of the sheet can be taken to compare against expected results.
 - [`@wrote/rm`](https://github.com/wrote/rm): delete a file or a directory.
 - [`@wrote/clone`](https://github.com/wrote/clone): clone a file or a directory.
 
