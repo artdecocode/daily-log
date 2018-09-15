@@ -10,7 +10,7 @@
     "test-all": "yarn-s test test-build",
     "test-watch": "yarn test -w",
     "lint": "eslint .",
-    "doc": "NODE_DEBUG=doc doc documentary -o README.md -h1",
+    "doc": "NODE_DEBUG=doc doc documentary -o README.md -h1 -r",
     "b": "alamode src -o build",
     "build": "yarn-s b doc",
     "rec": "NODE_DEBUG=appshot appshot -T 23 -a Terminal -y 150 -f",
@@ -35,10 +35,10 @@
   "homepage": "https://github.com/artdecocode/daily-log#readme",
   "devDependencies": {
     "@svag/lib": "2.0.0",
-    "alamode": "1.4.0",
-    "documentary": "1.15.2",
+    "alamode": "1.5.0",
+    "documentary": "1.16.1",
     "eslint-config-artdeco": "1.0.1",
     "yarn-s": "1.1.0",
-    "zoroaster": "3.1.2"
+    "zoroaster": "3.2.0"
   }
 }

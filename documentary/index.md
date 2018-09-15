@@ -12,6 +12,10 @@
 	chalk`{bgYellowBright ©️ 2018} {bgGreenBright Art Deco Code}` +
 	'\n' -->
 
+%~%
+
 ## Table Of Contents
 
 %TOC%
+
+%~%

@@ -1,4 +1,3 @@
-
 ### 10 Monday
 
 When checking out the repository on the phone using mobile Safari, the image did not look sharp, because the filter made it into a raster and the quality was lost. The fix was to implement the shadow as a separate element. The problem did not arise on the desktop because images were not resized, however now with the example below it is clear that it could also have happened for larger images.
@@ -140,3 +139,5 @@ The daily log could get its own domain, such as [`dailylog.co`](t). Gosh I love 
 - Watch and auto-commit changes to examples in `documentary`.
 
 > Timer: 9.30 + 3.12 = 12.42 Hours
+
+%~%

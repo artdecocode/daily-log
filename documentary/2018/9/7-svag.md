@@ -1,4 +1,3 @@
-
 ### 7 Friday
 
 <!-- wake: 16
@@ -46,3 +45,5 @@ There's an [`asciinema`](https://asciinema.org/) project which allows to play te
 1. move the `clean-stack` to art deco scope as still waiting on the PR to get merged.
 
 > Timer: (10.5 - 5.3 = 5.2) + (7.28) = _12 hours 30 min_
+
+%~%

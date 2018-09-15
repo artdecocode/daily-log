@@ -1,4 +1,3 @@
-
 ## API
 
 The package is available by importing its default function:
@@ -17,3 +16,5 @@ import dailyLog from 'daily-log'
 Call this function to get the result you want.
 
 %EXAMPLE: example/example.js, ../src => daily-log%
+
+%~%
