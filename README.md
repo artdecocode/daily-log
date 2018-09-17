@@ -242,7 +242,7 @@ Finally, I also fixed a bug in `mismatch@1.0.3` necessary to implement masks. Th
 
 **TIME**
 
-![times](images/18-17/time.png)
+![times](images/18-17/time2.png)
 
 ### 17-24 Week Plan
 
