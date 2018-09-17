@@ -164,3 +164,7 @@ Finally, I also fixed a bug in `mismatch@1.0.3` necessary to implement masks. Th
 **FUTURE**
 
 - [ ] Fix the `import default, { named } from 'package'` bug in _À La Mode_.
+
+**TIME**
+
+![times](images/18-17/time.png)

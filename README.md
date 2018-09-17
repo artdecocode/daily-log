@@ -240,6 +240,10 @@ Finally, I also fixed a bug in `mismatch@1.0.3` necessary to implement masks. Th
 
 - [ ] Fix the `import default, { named } from 'package'` bug in _À La Mode_.
 
+**TIME**
+
+![times](images/18-17/time.png)
+
 ### 17-24 Week Plan
 
 _Added: 17 Sep 2018 09:10_
