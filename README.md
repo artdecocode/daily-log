@@ -86,6 +86,12 @@ This week can be structured in the similar way as the last one, with 2 days work
 - _Documentary_: extract all `@typedefs` first to be able to link them across the whole README.
 - _Idio_: get back to finishing off the documentation written for the `@idio/core`, publish it.
 - _Rqt_: make use of `@idio/core` in testing by updating the `https-context`.
+- _Expensive_: Use the new `@rqt/rqt` in the project, and allow to fetch Whois data.
+
+**DEVOPS**
+
+- Migrate from Route 53 to the NS1 to cut the costs.
+- Switch off some servers as now using Azure, look into a green hosting provider.
 
 **LABS**
 
