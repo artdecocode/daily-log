@@ -129,7 +129,7 @@ const ts = makeTestSuite('test/result/Documentary', {
 
 Here, a _Transform_ stream is created which performs the main logic of the software, including embedding examples and outputs. The inputs are mapped to the outputs in the `test/result/Documentary` folder, which contains different files for different transforms, for example, a table.
 
-````md
+````markdown
 // replaces a table
 The program accepts the following arguments:
 
@@ -151,7 +151,7 @@ The program accepts the following arguments:
 /**/
 ````
 
-> <img src="images/18-17/factory.svg" align="right"> A mask **factory** is a function which takes the location of the mask file on a computer and creates a mask test suite. It is called a factory because it is used to create objects according to certain process. In case of _Zoroaster_, an object is a test suite which contains any number of tests, or other test suites.
+> <img src="images/18-17/factory.svg" align="right" height="70"> A mask **factory** is a function which takes the location of the mask file on a computer and creates a mask test suite. It is called a factory because it is used to create objects according to certain process. In case of _Zoroaster_, an object is a test suite which contains any number of tests, or other test suites.
 
 %~ width="15"%
 
@@ -159,8 +159,8 @@ It was nice to work during the day, and it felt like actual work rather than a f
 
 Finally, I also fixed a bug in `mismatch@1.0.3` necessary to implement masks. This brings the number of releases today to solid 3. Moreover, I found an important bug in _À La Mode_ which needs fixing. This will allow me to update _À La Import_ package in which the bug is present to the latest _Zoroaster_ and make the best use of the new masks.
 
-<img src="images/18-17/ads.svg" align="left"/> I also thought about marking ideas for the Art Deco package, and realised I could add a note when packages are installed, so that those 600 downloads of _Documentary_ would have shown 600 messages promoting Art Deco package in a form similar to "Thanks for choosing _Documentary_. It is part of Art Deco packages which include a modern context-testing framework _Zoroaster_ and a regex-based transpiler _À La Mode_. Are you tired of Babel and Mocha with 6000 dependencies? Stand out from the crowd by starting to use Art Deco packages".
+<img src="images/18-17/adc.svg" align="left" height="200"/> I also thought about marking ideas for the Art Deco package, and realised I could add a note when packages are installed, so that those 600 downloads of _Documentary_ would have shown 600 messages promoting Art Deco package in a form similar to "Thanks for choosing _Documentary_. It is part of Art Deco packages which include a modern context-testing framework _Zoroaster_ and a regex-based transpiler _À La Mode_. Are you tired of Babel and Mocha with 6000 dependencies? Stand out from the crowd by starting to use Art Deco packages".
 
 **FUTURE**
 
-- [ ] Fix bug in _À La Mode_.
+- [ ] Fix the `import default, { named } from 'package'` bug in _À La Mode_.
