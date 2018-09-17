@@ -14,11 +14,13 @@ It would be useful to be able to see at which position in the search a package i
 
 %~ width="15"%
 
+<p align="center">
 ```table
 [
   ["![https://github.com/artdecocode/documentary](images/18-17/17.png)"],["17 September is a good day to release `documentary@1.17`."]
 ]
 ```
+</p>
 
 Today was a good and productive day, when I focussed on the **essential** work to implement linking of `@typedef` titles across the whole documentation. This feature was needed to continue with `@idio/core` to describe different sections of the configuration in multiple sections of the documentation, but be able to link to them from the overall, combined configuration.
 
