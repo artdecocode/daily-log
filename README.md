@@ -88,15 +88,16 @@ It would be useful to be able to see at which position in the search a package i
 
 Today was a good and productive day, when I focussed on the **essential** work to implement linking of `@typedef` titles across the whole documentation. This feature was needed to continue with `@idio/core` to describe different sections of the configuration in multiple sections of the documentation, but be able to link to them from the overall, combined configuration.
 
-`import('NodeJS').Hello` __<a name="hello">`Hello`</a>__: When life gives you lemons, make a lemonade.
+`import('NodeJS').JavaScript` __<a name="javascript">`JavaScript`</a>__
 
 __<a name="hello">`Hello`</a>__: When life gives you lemons, make a lemonade.
 
 __<a name="world">`World`</a>__: Freedom (n.): To ask nothing. To expect nothing. To depend on nothing.
 
-|      Name      |       Type        |                  Description                  | Default |
-| -------------- | ----------------- | --------------------------------------------- | ------- |
-| __integrity*__ | [_Hello_](#hello) | Integrity is the ability to stand by an idea. | -       |
+|      Name      |            Type             |                                          Description                                          | Default |
+| -------------- | --------------------------- | --------------------------------------------------------------------------------------------- | ------- |
+| __integrity*__ | [_Hello_](#hello)           | Integrity is the ability to stand by an idea.                                                 | -       |
+| __evidence*__  | [_JavaScript_](#javascript) | The hardest thing to explain is the glaringly evident which everybody has decided not to see. | -       |
 
 I started working on implementing this feature _Documentary_ by writing tests. I realised that the tests could be improved as well which was a work in progress, when instead of re-writing the same code many times to test different inputs for the same transformation, I used _Zoroaster_ masks. I then also improved _Zoroaster_ to be able to read the stream automatically, and compare it to a masks output.
 

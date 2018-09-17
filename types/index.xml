@@ -1,9 +1,12 @@
 <types>
-  <import name="JavaScript" from="NodeJS">
+  <import name="JavaScript" from="NodeJS"/>
   <type name="Hello" desc="When life gives you lemons, make a lemonade."/>
   <type name="World" desc="Freedom (n.): To ask nothing. To expect nothing. To depend on nothing.">
     <prop type="Hello" name="integrity">
       Integrity is the ability to stand by an idea.
+    </prop>
+    <prop type="JavaScript" name="evidence">
+      The hardest thing to explain is the glaringly evident which everybody has decided not to see.
     </prop>
   </type>
 </types>
