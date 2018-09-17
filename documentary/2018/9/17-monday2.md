@@ -4,11 +4,11 @@ _Added: 17 Sep 2018 23:54_
 
 It was nice to see the climb in the download count of _Documentary_, which reached 600+ weekly downloads. It is much more than last week, and possibly because more tags were added.
 
-![#](images/18-17/600.gif)
+<a href="https://npmjs.com/package/documentary">![download count](images/18-17/600.gif)</a>
 
 Tags are important for discoverability, therefore I think the increase in downloads might have been because of the `table of contents` tag.
 
-![#](images/18-17/tags.png)
+![tags git blame](images/18-17/tags.png)
 
 It would be useful to be able to see at which position in the search a package is against each of its tags. For the `documentation` tag, _Documentary_ is currently somewhere around 400 position, although it's a really great package. However, when it becomes more popular the position will improve as well, as the score is partly calculated according to popularity. _MNP_ should be able to analyse the tags, and it could be possible to install an image on a package page, which would call the _MNP_ server and tell the referrer of the page (i.e. which page people came from). This would show the search query and tags that people found the package from. I am not 100% sure it's technically possible, but there does not seem to be a proxy for an image, like it is on GitHub to prevent this sort of spying. Although it might be unethical, the method is only proposed to analyse and improve the marketing of packages using tags, and is not intended to breach privacy. In any way, NPM has a way to protect against this, but they never will because NPM sucks big time. Just the fact that they had to use somebody else's search engine for packages on their own website shows how desperate the company is.
 
@@ -16,7 +16,7 @@ It would be useful to be able to see at which position in the search a package i
 
 ```table
 [
-  ["![https://github.com/artdecocode/documentary](images/18-17/17.png)"],["17 September is a good day to release `documentary@1.17`."]
+  ["<a href='https://github.com/artdecocode/documentary'>![documentary documentation pre-processor](images/18-17/17.png)</a>"],["17 September is a good day to release `documentary@1.17`."]
 ]
 ```
 
@@ -26,7 +26,7 @@ Today was a good and productive day, when I focussed on the **essential** work t
 
 I started working on implementing this feature _Documentary_ by writing tests. I realised that the tests could be improved as well which was a work in progress, when instead of re-writing the same code many times to test different inputs for the same transformation, I used _Zoroaster_ masks. I then also improved _Zoroaster_ to be able to read the stream automatically, and compare it to a masks output.
 
-![https://github.com/artdecocode/zoroaster](images/18-17/zoroaster.png)
+<a href="https://github.com/artdecocode/zoroaster">![zoroaster javascript context testing framework](images/18-17/zoroaster.png)</a>
 
 The example below shows how easy it is to write tests now. The mask tests for the binary (the actual program to be run) _now_ look like this with the `fork` property:
 
