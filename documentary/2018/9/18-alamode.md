@@ -25,6 +25,10 @@ There are two ways to approach publishing a website, for example for ÀLaMode:
 
 In comparison to GitHub pages, the advantage of putting a website in a HEAD branch is that there is no need to maintain a separate branch for the website. On the other hand, not even a simple server needs to be started when using GitHub pages.
 
+There is also a possibility for the `docks` software which would allow to control via a web-interface and CLI all the running Dokku apps, and in future even spawn new virtual machines. Unfortunately, the `docks` package is taken, but the namespace `@docks` is free. On GitHub, the org seems also to belong to an inactive account. By providing a web-interface, the whole process of managing apps could be simplified and abstracted so that no knowledge of the fact that it is based on Dokku is required. It could then be expanded to platform providers such as Heroku as well.
+
+[![](images/18/9-18/docks.svg)](https://docks.cc)
+
 **FUTURE**
 
 - [ ] Fix a bug in ÀLaMode when a completely empty file is processed.
