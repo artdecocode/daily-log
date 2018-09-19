@@ -94,13 +94,15 @@ There are two ways to approach publishing a website, for example for ÀLaMode:
 
 In comparison to GitHub pages, the advantage of putting a website in a HEAD branch is that there is no need to maintain a separate branch for the website. On the other hand, not even a simple server needs to be started when using GitHub pages.
 
-There is also a possibility for the `docks` software which would allow to control via a web-interface and CLI all the running Dokku apps, and in future even spawn new virtual machines. Unfortunately, the `docks` package is taken, but the namespace `@docks` is free. On GitHub, the org seems also to belong to an inactive account. By providing a web-interface, the whole process of managing apps could be simplified and abstracted so that no knowledge of the fact that it is based on Dokku is required. It could then be expanded to platform providers such as Heroku as well.
+Furthermore, it is uncertain which organisation to use for website packages. By putting them in the `artdecocode` organisation with Node.js packages, it makes the directory more crowded as there is less separation between packages and website. This could be solved by adding `artdecowww` `artdecoweb` organisations, for instance. The organisation could also be kept the same, but a different folder is used. By providing a question for the default structure during _MNP_ initialisation, all new packages could be setup to be websites by default.
 
-[![](images/18/9-18/docks.svg)](https://docks.cc)
+[<img src="images/18/9-18/docks.svg" align="right">](https://docks.cc)
+There is also a possibility for the `docks` software which would allow to control via a web-interface and CLI all the running Dokku apps, and in future even spawn new virtual machines. Unfortunately, the `docks` package is taken, but the namespace `@docks` is free. On GitHub, the org seems also to belong to an inactive account. By providing a web-interface, the whole process of managing apps could be simplified and abstracted so that no knowledge of the fact that it is based on Dokku is required. It could then be expanded to platform providers such as Heroku as well.
 
 **FUTURE**
 
 - [ ] Fix a bug in ÀLaMode when a completely empty file is processed.
+- [ ] Implement `yarn doc commit message` to automatically push the committed changes.
 - [ ] Add `node-exiftool` to _Documentary_ to add copyright metadata to images.
 - [ ] Add a feature to _Documentary_ to be able to compile a text in SVG with a given font via spawning Chrome and drawing on canvas, therefore it should be a plugin since it's an advanced functionality which would require additional dependencies such as `Chrome Launcher`.
 
@@ -675,8 +677,6 @@ The daily log could get its own domain, such as <a name="dailylogco">`dailylog.c
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/12.svg?sanitize=true"></a></p>
 
-
-
 ### 7 Friday
 
 Viva la [`SVaG`](https://svag.co)! As continuation from yesterday's work on making a terminal SVG, I started the day by figuring out that the best course of action would be to create a package which would export multiple UI elements as SVGs. The elements can be dynamically generated, therefore a whole library was written. In the beginning, I just worked on the `svag` package and was putting lib methods and UI elements such as `terminal` in there, but quickly changed to registering a new organisation on `npm` [`svag`](https://www.npmjs.com/org/svag) and on GitHub, and used `mnp` to spawn packages.
@@ -777,7 +777,9 @@ There's an [`asciinema`](https://asciinema.org/) project which allows to play te
 
 > Timer: (10.5 - 5.3 = 5.2) + (7.28) = _12 hours 30 min_
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/13.svg?sanitize=true"></a></p>### 6 Thursday
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/13.svg?sanitize=true"></a></p>
+
+### 6 Thursday
 
 The day started by continuing to find suitable packages to compile w/ `documentary`. [`json2svg`](https://www.npmjs.com/package/json2csv) looked good yesterday, however it had a screenshot of a PNG. Therefore it was decided to be a great feature for _Documentary_ to make screenshots of output from a terminal. The search revealed existence of [`ansi-to-svg`](https://github.com/F1LT3R/ansi-to-svg) which is not very popular, but amazing. To start off with, a [Yosemite UI Kit](https://www.sketchappsources.com/tag/yosemite.html) for Sketch was downloaded and the title bar exported as SVG.
 
