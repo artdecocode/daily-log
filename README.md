@@ -96,7 +96,7 @@ In comparison to GitHub pages, the advantage of putting a website in a HEAD bran
 
 Furthermore, it is uncertain which organisation to use for website packages. By putting them in the `artdecocode` organisation with Node.js packages, it makes the directory more crowded as there is less separation between packages and website. This could be solved by adding `artdecowww` `artdecoweb` organisations, for instance. The organisation could also be kept the same, but a different folder is used. By providing a question for the default structure during _MNP_ initialisation, all new packages could be setup to be websites by default.
 
-[<img src="images/18/9-18/docks.svg" align="right">](https://docks.cc)
+[<img src="images/18/9-18/docks.svg" align="right" height="75">](https://docks.cc)
 There is also a possibility for the `docks` software which would allow to control via a web-interface and CLI all the running Dokku apps, and in future even spawn new virtual machines. Unfortunately, the `docks` package is taken, but the namespace `@docks` is free. On GitHub, the org seems also to belong to an inactive account. By providing a web-interface, the whole process of managing apps could be simplified and abstracted so that no knowledge of the fact that it is based on Dokku is required. It could then be expanded to platform providers such as Heroku as well.
 
 **FUTURE**
