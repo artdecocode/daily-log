@@ -1,5 +1,7 @@
 ### 18 Tuesday
 
+_Added: 19 Sep 2018 7:00_
+
 ![](images/18/9-18/ÀLaMode.png)
 
 I fixed the bug in the `@a-la/import` to allow importing from Babel-compiled packages. I also improved the tests by writing evaluation tests, where the transpiled code will be run in a new VM context, making sure that it does work, rather than just to see what it looks like. This testing strategy is a high-level integration test and allows to be sure that modules will be exported and correctly.
