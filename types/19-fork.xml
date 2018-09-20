@@ -1,6 +1,11 @@
 <types>
-  <import name="Running" from="where" link="https://why-are-you-running.com"/>
-  <type name="You">
+  <import
+    name="Running"
+    from="where"
+    link="https://why-are-you-running.com"
+    desc="The process of moving fast from and to a certain location."
+  />
+  <type name="You" desc="It is you.">
     <prop name="why" type="Promise.<Running>">
       Why are you running?
     </prop>

@@ -3,7 +3,9 @@
 On the 18th, I filed a number of bugs to the _VS Code_, including:
 
 <details>
-  <summary>**Suggestions do not work on async properties.**</summary>
+  <summary>
+
+  **Suggestions do not work on async properties.**</summary>
 
 On the first screenshot, the suggestions work fine:
 
@@ -16,7 +18,9 @@ On the second example, the suggestion does not work because the method starts wi
 </details>
 
 <details>
-  <summary>**No insight into method signature as part of property.**</summary>
+  <summary>
+
+  **No insight into method signature as part of property.**</summary>
 
 On the first screenshot, I can see what arguments a function accepts.
 
@@ -32,7 +36,7 @@ This makes me to comment out that line, and start typing the property name again
 
 ---
 
-> <img src="images/hand2.svg" align="left"> The number of issues filed against _VS Code_ shows _Art Deco_'s commitment to the best developer experience using its packages. Suggestions for autocompletion is the best indicator of how developer-friendly a package is, because when developers can see those, they have reassurance that everything's going right. There is a general ongoing need to be able to test the suggestions in each package as a separate stage in testing.
+> <img src="images/hand2.svg" align="left" height="150"> The number of issues filed against _VS Code_ shows _Art Deco_'s commitment to the best developer experience using its packages. Suggestions for autocompletion is the best indicator of how developer-friendly a package is, because when developers can see those, they have reassurance that everything's going right. There is a general ongoing need to be able to test the suggestions in each package as a separate stage in testing.
 
 %~ width="15"%
 

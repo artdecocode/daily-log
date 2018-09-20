@@ -74,7 +74,9 @@ import dailyLog from 'daily-log'
 On the 18th, I filed a number of bugs to the _VS Code_, including:
 
 <details>
-  <summary>**Suggestions do not work on async properties.**</summary>
+  <summary>
+
+  **Suggestions do not work on async properties.**</summary>
 
 On the first screenshot, the suggestions work fine:
 
@@ -87,7 +89,9 @@ On the second example, the suggestion does not work because the method starts wi
 </details>
 
 <details>
-  <summary>**No insight into method signature as part of property.**</summary>
+  <summary>
+
+  **No insight into method signature as part of property.**</summary>
 
 On the first screenshot, I can see what arguments a function accepts.
 
@@ -103,7 +107,7 @@ This makes me to comment out that line, and start typing the property name again
 
 ---
 
-> <img src="images/hand2.svg" align="left"> The number of issues filed against _VS Code_ shows _Art Deco_'s commitment to the best developer experience using its packages. Suggestions for autocompletion is the best indicator of how developer-friendly a package is, because when developers can see those, they have reassurance that everything's going right. There is a general ongoing need to be able to test the suggestions in each package as a separate stage in testing.
+> <img src="images/hand2.svg" align="left" height="150"> The number of issues filed against _VS Code_ shows _Art Deco_'s commitment to the best developer experience using its packages. Suggestions for autocompletion is the best indicator of how developer-friendly a package is, because when developers can see those, they have reassurance that everything's going right. There is a general ongoing need to be able to test the suggestions in each package as a separate stage in testing.
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true" width="15"></a></p>
 
@@ -175,9 +179,9 @@ When working on this feature, I had to change the `spawncommand` package to prov
 
 In turn, when working on the `spawncommand` to compile documentation, one of the properties of a class was a promise which was resolved with an object with a certain type, e.g., `Promise.<PromiseResult>`. _Documentary_ could not display this because the type (`PromiseResult`) was not understood to be inside of the promise. I had to fix that, and add linking to external documentation for imported types as well. The result could be seen in the example below:
 
-[`import('where').Running`](https://why-are-you-running.com) __<a name="running">`Running`</a>__
+[`import('where').Running`](https://why-are-you-running.com) __<a name="running">`Running`</a>__: The process of moving fast from and to a certain location.
 
-__<a name="you">`You`</a>__
+__<a name="you">`You`</a>__: It is you.
 
 |   Name   |                 Type                  |     Description      | Default |
 | -------- | ------------------------------------- | -------------------- | ------- |
