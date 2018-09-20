@@ -107,7 +107,7 @@ This makes me to comment out that line, and start typing the property name again
 
 ---
 
-> <img src="images/hand2.svg" align="left" height="150"> The number of issues filed against _VS Code_ shows _Art Deco_'s commitment to the best developer experience using its packages. Suggestions for autocompletion is the best indicator of how developer-friendly a package is, because when developers can see those, they have reassurance that everything's going right. There is a general ongoing need to be able to test the suggestions in each package as a separate stage in testing.
+> <img src="images/hand2.svg" align="left" height="75"> The number of issues filed against _VS Code_ shows _Art Deco_'s commitment to the best developer experience using its packages. Suggestions for autocompletion is the best indicator of how developer-friendly a package is, because when developers can see those, they have reassurance that everything's going right. There is a general ongoing need to be able to test the suggestions in each package as a separate stage in testing.
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true" width="15"></a></p>
 
