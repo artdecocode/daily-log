@@ -73,7 +73,8 @@ import dailyLog from 'daily-log'
 
 On the 18th, I filed a number of bugs to the _VS Code_, including:
 
-**Suggestions do not work on async properties.**
+<details>
+  <summary>**Suggestions do not work on async properties.**</summary>
 
 On the first screenshot, the suggestions work fine:
 
@@ -83,10 +84,10 @@ On the second example, the suggestion does not work because the method starts wi
 
 ![screen shot 2018-09-18 at 13 12 20](https://user-images.githubusercontent.com/21156791/45680784-8480bd80-bb44-11e8-9ec1-43a7459a5060.png)
 
----
+</details>
 
-**No insight into method signature as part of property.**
-
+<details>
+  <summary>**No insight into method signature as part of property.**</summary>
 
 On the first screenshot, I can see what arguments a function accepts.
 
@@ -97,6 +98,8 @@ However, when I've already typed in the function name, I get no useful informati
 ![screen shot 2018-09-18 at 13 17 21](https://user-images.githubusercontent.com/21156791/45681049-3324fe00-bb45-11e8-92e4-85a6536e1281.png)
 
 This makes me to comment out that line, and start typing the property name again to see what I can give to it as arguments. Pretty inconvenient.
+
+</details>
 
 ---
 
