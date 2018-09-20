@@ -187,13 +187,19 @@ __<a name="you">`You`</a>__: It is you.
 | -------- | ------------------------------------- | -------------------- | ------- |
 | __why*__ | _Promise.&lt;[Running](#running)&gt;_ | Why are you running? | -       |
 
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true" width="15"></a></p>
+
 <img src="images/cow.svg" align="right" height="150">After that was completed, I had to go out to town. On the way back I was hungry and because the place was next to a train station, there was a lot of kebab shops. It felt tempting because of the smell however there is just a general attitude that "I don't eat that". Although I might mentally want that food because I know that it taste nice, I don't physically want to have it. Instead, I can feel that being hungry is OK as a feeling on its own as well, reinforced by the idea that I consciously choose not to be part of the meat eating confusion. This idea gives strength, feeling of having a certain purpose of rejecting to be like the rest of the people.
 
-<img src="images/chicken.svg" align="left" height="150">Moreover, it's quite religious as well because there's certain awareness that there is a resolution to doing what I am doing. But out of all religions veganism is the best, because it does not force you to close up your mind and stupidly deny yourself pleasure such as sex which is not harming anyone (except for those you're denying it to), but focuses on your own personal understanding of power. It is very easy to have Christian compassion and pity for people, it just gives you pride that you are virtuous, however you don't need religion to be compassionate as it's an innate quality. Thinking of animals, on the other hand, is not promoted by any religion apart from Buddhism, and it is a true measure of the quality of your soul. Why would anyone want others to suffer because of him or her? Only because it's normal in the society. When ties to the society to certain extent are broken, the true freedom of thought and living can be experience. When this happens, there is no need to call yourself by the name of your religion and pretending that you know anything about spirituality. What is there to know? All one has to do is disconnect from all external sources which tell you what is right and wrong. Having a purpose of not participating in the set-up system rather than joining it and fooling yourself that by abstaining from normally good things that give pleasure, but choosing to live life by not harming any other living beings, present or future, is far more spiritual. I don't know why it's so hard to get.
+<img src="images/chicken.svg" align="left" height="150">Moreover, it's quite religious as well because there's certain awareness that there is a resolution to doing what I am doing. But out of all religions veganism is the best, because it does not force you to close up your mind and stupidly deny yourself pleasure such as sex which is not harming anyone (except for those you're denying it to), but focuses on your own personal understanding of power. It is very easy to have Christian compassion and pity for people, it just gives you pride that you are virtuous, however you don't need religion to be compassionate as it's an innate quality.
 
-<img src="images/lizard.svg" align="right" height="150">Also, I despise all the governments for banning MDMA. Once again we see a corrupt system which does not want people to be happy and just wants workers who labour until retirement and produce a stable input to the economy. MDMA has a massive therapeutic potential, for example if I feel bad because of all the injustice and bullshit in the world, I could take my drug and be OK. This maybe does not solve the problem in long term because I will be coming back to that sad feeling, but it's nobody right to take away this sort of medicine away from me. This also shows the stage of our societies are at the moment, and hopefully in 100 or so years this might change. However, I'm sceptical about anyone surviving the next 100 years because we've already destroyed the planet. I would stop programming now and focus on something more natural, however I need to be able to make a living even though I know it is all doomed. It is not pessimism it is just a reality that although I might want to go out to walks and attend to reading all day long, because the is no point of my technology in the long-run, I still have to work and attach my mind to the programs to be able to be financially independent myself. I want to improve the quality of life of people who will use my software, so that they can go on and do their own amazing things, but technology and interaction with it is artificial and there is a need to remember that. Being a slave to technology and "placing a microchip" in one's own brain to follow certain rules and repeat certain actions is a waste of one's life. The though is not even real, only experience of living is worth anything, but to be able to experience it, we must work and use the thought, which is an instrument and not the the target in itself. Babylon must fall down.
+Thinking of animals, on the other hand, is not promoted by any religion apart from Buddhism, and it is a true measure of the quality of your soul. Why would anyone want others to suffer because of him or her? Only because it's normal in the society. When ties to the society to certain extent are broken, the true freedom of thought and living can be experience. When this happens, there is no need to call yourself by the name of your religion and pretending that you know anything about spirituality. What is there to know? All one has to do is disconnect from all external sources which tell you what is right and wrong. Having a purpose of not participating in the set-up system rather than joining it and fooling yourself that by abstaining from normally good things that give pleasure, but choosing to live life by not harming any other living beings, present or future, is far more spiritual. I don't know why it's so hard to get.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
+<img src="images/k.svg" width="500">
+
+Also, I despise all the governments for banning MDMA. Once again we see a corrupt system which does not want people to be happy and just wants workers who labour until retirement and produce a stable input to the economy. MDMA has a massive therapeutic potential, for example if I feel bad because of all the injustice and bullshit in the world, I could take my drug and be OK. This maybe does not solve the problem in long term because I will be coming back to that sad feeling, but it's nobody right to take away this sort of medicine away from me. This also shows the stage of our societies are at the moment, and hopefully in 100 or so years this might change. However, I'm sceptical about anyone surviving the next 100 years because we've already destroyed the planet. I would stop programming now and focus on something more natural, however I need to be able to make a living even though I know it is all doomed. It is not pessimism it is just a reality that although I might want to go out to walks and attend to reading all day long, because the is no point of my technology in the long-run, I still have to work and attach my mind to the programs to be able to be financially independent myself. I want to improve the quality of life of people who will use my software, so that they can go on and do their own amazing things, but technology and interaction with it is artificial and there is a need to remember that. Being a slave to technology and "placing a microchip" in one's own brain to follow certain rules and repeat certain actions is a waste of one's life. The though is not even real, only experience of living is worth anything, but to be able to experience it, we must work and use the thought, which is an instrument and not the the target in itself. Babylon must fall down.
+
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
 
 ### 18 Tuesday
 
@@ -236,7 +242,7 @@ There is also a possibility for the `docks` software which would allow to contro
 - [ ] Add `node-exiftool` to _Documentary_ to add copyright metadata to images.
 - [ ] Add a feature to _Documentary_ to be able to compile a text in SVG with a given font via spawning Chrome and drawing on canvas, therefore it should be a plugin since it's an advanced functionality which would require additional dependencies such as `Chrome Launcher`.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true"></a></p>
 
 ### 17 Monday
 
@@ -252,7 +258,7 @@ Tags are important for discoverability, therefore I think the increase in downlo
 
 It would be useful to be able to see at which position in the search a package is against each of its tags. For the `documentation` tag, _Documentary_ is currently somewhere around 400 position, although it's a really great package. However, when it becomes more popular the position will improve as well, as the score is partly calculated according to popularity. _MNP_ should be able to analyse the tags, and it could be possible to install an image on a package page, which would call the _MNP_ server and tell the referrer of the page (i.e. which page people came from). This would show the search query and tags that people found the package from. I am not 100% sure it's technically possible, but there does not seem to be a proxy for an image, like it is on GitHub to prevent this sort of spying. Although it might be unethical, the method is only proposed to analyse and improve the marketing of packages using tags, and is not intended to breach privacy. In any way, NPM has a way to protect against this, but they never will because NPM sucks big time. Just the fact that they had to use somebody else's search engine for packages on their own website shows how desperate the company is.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true" width="15"></a></p>
 
 | <a href='https://github.com/artdecocode/documentary'>![documentary documentation pre-processor](images/18-17/17.png)</a> |
 | ------------------------------------------------------------------------------------------------------------------------ |
@@ -400,7 +406,7 @@ The program accepts the following arguments:
 
 > <img src="images/18-17/factory.svg" align="right" height="70"> A mask **factory** is a function which takes the location of the mask file on a computer and creates a mask test suite. It is called a factory because it is used to create objects according to certain process. In case of _Zoroaster_, an object is a test suite which contains any number of tests, or other test suites.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true" width="15"></a></p>
 
 It was nice to work during the day, and it felt like actual work rather than a full-time hobby because I started at 9am rather than some random time I used to start in previous weeks. I feel more organise with proper planning, however I don't believe it's that important because I was doing a lot of work before planning as well. This means that although there's more structure, it does not mean that the end result is any better. It's just the attitude, and also allows to take things more seriously, i.e. I felt pretty much like at a job, with a short lunch break and some tiredness by 5:30, almost ready to go home (from home lol). Despite that, the feeling was very positive because of the fact that I am not working for somebody building what they want so that I can spend half of the money on rent _etc_, but doing what _I_ love to do, and what _I_ find important, that is, my company. There was a sense of connection with the world as well and other people because everybody is just doing what they can. It's really this expanded perception from bird-view that is related to the awareness of how everything on the planet and in both human and animal societies is connected. It might be called collective unconsciousness because we all exist together and there is always cause and effect. To perceive this is like to slow down time and be able to take in the more general view of the whole planet. However, it might be just a trick of the mind due to fatigue.
 
@@ -456,7 +462,7 @@ This week can be structured in the similar way as the last one, with 2 days work
 
 With the _Art Deco_ JavaScript, it looks like the project could be ready for a good start soon. When _Documentary_ receives an animated terminal, _Zoroaster_ gets a well-composed example, and _À La Mode_ can transpile files on-the-fly, the functional part of the product comes to the release of the first version. It will be time then to think about which domain name to use for the concept, and devise a marketing plan for the best launch. However, it might have to wait before the work in the `labs` section gets implemented, including the `moderne` package, because it seems that it might be an essential part of the project.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/9.svg?sanitize=true"></a></p>
 
 ### 13 Thursday -- 14 Friday
 
@@ -479,7 +485,7 @@ By the morning, when I wrote description of the section breaks, something unexpe
 
 > TIMER: 8.30 (without browsing for fonts, extracting SVGs)
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/9.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/10.svg?sanitize=true"></a></p>
 
 _Documentary_ works in 2 stages: first, it creates a stream of data from a directory with separate files. It pipes that stream into a _Toc_ generator, which extracts the titles so that it can construct the table of contents. The second stage is run afterwards, because when we see the `%TOC%` marker, we need to replace it with the table of contents, therefore we have to scan the whole document for headings first. But because I wanted to reuse the stream of data for both documentation and the Toc, I piped it into a dummy proxy stream, and paused it, and unpaused when the Toc was ready. The idea was that it would accumulate all data in a buffer, which would then be allowed to flow when the Toc is built. There was no problems with it before, but when there was too much data, it stopped working.
 
@@ -487,7 +493,7 @@ _Documentary_ works in 2 stages: first, it creates a stream of data from a direc
 
 The solution was to be generous and create a new stream of data from a directory rather than trying to reuse a buffered one. It worked right away after the implementation as well. The good point is that some other parts of the software were rewritten for easier understanding and maintenance in the future.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/10.svg?sanitize=true" width="10"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/11.svg?sanitize=true" width="10"></a></p>
 
 When I tried to compile _Documentary_ with _Alamode_, I faced a problem that the svg image files were also processed by the transpiler, which in addition added source maps to it. This shouldn't happen because only JS and JSX files need to be processed by it. Therefore, _Alamode_ also required an update which was added to it.
 
@@ -512,7 +518,7 @@ It is really interesting how orgs and package name spaces can work so well toget
 
 > TIMER: 10 hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/11.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/12.svg?sanitize=true"></a></p>
 
 ### 12 Wednesday
 
@@ -655,13 +661,13 @@ Tomorrow, I will do more research for Demimonde to give fuller descriptions of c
 
 > Timer: 6.30 + 6.12 = 12.42 hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/12.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/13.svg?sanitize=true"></a></p>
 
 ### 11 Tuesday
 
 Market research for _Demimonde_ and coming up with ideas.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/13.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/14.svg?sanitize=true"></a></p>
 
 ### 10 Monday
 
@@ -805,7 +811,7 @@ The daily log could get its own domain, such as <a name="dailylogco">`dailylog.c
 
 > Timer: 9.30 + 3.12 = 12.42 Hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/14.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/15.svg?sanitize=true"></a></p>
 
 ### 7 Friday
 
@@ -907,7 +913,7 @@ There's an [`asciinema`](https://asciinema.org/) project which allows to play te
 
 > Timer: (10.5 - 5.3 = 5.2) + (7.28) = _12 hours 30 min_
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/15.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/16.svg?sanitize=true"></a></p>
 
 ### 6 Thursday
 
@@ -925,7 +931,7 @@ Finished off with a complete good-looking terminal template which could also be 
 
 1. Timer: 8.38 + (5.3) = _13 hours 41 min_
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/16.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/17.svg?sanitize=true"></a></p>
 
 ### 5 Wednesday
 
@@ -989,7 +995,7 @@ Error: example error after await
 
 **Future** Implement remembering the full async stack in `erotic`.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/17.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/18.svg?sanitize=true"></a></p>
 
 ## TODO
 
