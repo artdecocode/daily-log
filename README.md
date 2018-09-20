@@ -16,6 +16,8 @@
     * [`dailyLog(arg1: string, arg2?: boolean)`](#dailylogarg1-stringarg2-boolean-void)
 - [2018](#2018)
   * [September](#september)
+    * [19 Wednesday](#19-wednesday)
+      * [`You`](#you)
     * [18 Tuesday](#18-tuesday)
     * [17 Monday](#17-monday)
       * [`Hello`](#hello)
@@ -67,6 +69,119 @@ import dailyLog from 'daily-log'
 
 ## September
 
+### 19 Wednesday
+
+On the 18th, I filed a number of bugs to the _VS Code_, including:
+
+**Suggestions do not work on async properties.**
+
+On the first screenshot, the suggestions work fine:
+
+![screen shot 2018-09-18 at 13 11 39](https://user-images.githubusercontent.com/21156791/45680761-7337b100-bb44-11e8-944a-a216c623e571.png)
+
+On the second example, the suggestion does not work because the method starts with `async`.
+
+![screen shot 2018-09-18 at 13 12 20](https://user-images.githubusercontent.com/21156791/45680784-8480bd80-bb44-11e8-9ec1-43a7459a5060.png)
+
+---
+
+**No insight into method signature as part of property.**
+
+
+On the first screenshot, I can see what arguments a function accepts.
+
+![screen shot 2018-09-18 at 13 16 21](https://user-images.githubusercontent.com/21156791/45681006-18528980-bb45-11e8-896f-ee4f7923e189.png)
+
+However, when I've already typed in the function name, I get no useful information at all about what I should pass to it.
+
+![screen shot 2018-09-18 at 13 17 21](https://user-images.githubusercontent.com/21156791/45681049-3324fe00-bb45-11e8-92e4-85a6536e1281.png)
+
+This makes me to comment out that line, and start typing the property name again to see what I can give to it as arguments. Pretty inconvenient.
+
+---
+
+> <img src="images/hand2.svg" align="left"> The number of issues filed against _VS Code_ shows _Art Deco_'s commitment to the best developer experience using its packages. Suggestions for autocompletion is the best indicator of how developer-friendly a package is, because when developers can see those, they have reassurance that everything's going right. There is a general ongoing need to be able to test the suggestions in each package as a separate stage in testing.
+
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true" width="15"></a></p>
+
+Today, I started with getting the `@a-la/import` with the bug fix ready to get merged into _ÀLaMode_ by linking it to test in the `alamode`. This worked fine with the evaluation tests, however then I wanted to change the integration test to use a mask:
+
+```js
+import TempContext from 'temp-context'
+import { accessSync, constants } from 'fs'
+import { join } from 'path'
+import Context from '../context'
+
+const { X_OK } = constants
+
+/** @type {Object.<string, (c: Context, tc: TempContext)>} */
+const T = {
+  context: [Context, TempContext],
+  async 'sets the correct permissions'({ SOURCE, fork }, { TEMP }) {
+    const file = 'index.js'
+    const s = join(SOURCE, file)
+    await fork([s, '-o', TEMP])
+    const j = join(TEMP, file)
+    accessSync(j, X_OK)
+  },
+}
+
+export default T
+```
+
+Here, `alamode`'s process is forked manually, but this could now be done with _Zoroaster's_ mask. However, the mask feature was not complete enough to be able to fork a process with additional arguments from the context, such as `TEMP` which is the path to a temp directory for a test. At that moment, `fork` option only allowed to pass the path to a module, and not to form its arguments. I started to improve that by updating _Zoroaster_.
+
+The feature described above could be implemented by passing a `ForkConfig` option to the `fork` property of a mask, and not just a string. The config would be able to return arguments and options to the module being forked based on input arguments and contexts. For example, the old way allowed to pass only a string in the `fork` property, which was enough when no arguments are required to be formed based on the context:
+
+```js
+const ts = makeTestSuite('test/result/bin/index.js', {
+  fork: Context.DOC,
+})
+```
+
+But the new way allows for greater flexibility.
+
+```js
+const rights = makeTestSuite('test/result/rights.md', {
+  fork: {
+    module: BIN,
+    /**
+     * @param {string[]}
+     * @param {TempContext}
+     */
+    getArgs(src, { TEMP }) {
+      return [...src, '-o', TEMP]
+    },
+    options: {
+      env: {
+        ALAMODE_ENV: "test"
+      },
+    },
+  },
+  getResults(input, { TEMP }) {
+    const b = basename(input)
+    const j = join(TEMP, b)
+    equal(lstatSync(j).mode, lstatSync(input).mode)
+    return 'ok'
+  },
+  context: TempContext,
+})
+```
+
+When working on this feature, I had to change the `spawncommand` package to provide suggestions for `ForkOptions` and `SpawnOptions` in the IDE. Before _VS Code_ allowed to write `/* typedef {import('child_process').ForkOptions} ForkOptions */` to import a type, this was impossible, because requiring a type with `require('child_process').ForkOptions` would not work, and only `import` statements ensured that the type was exported, however when compiled to `ES5`, this got lost. In newer versions, this was fixed successfully and is the now one of the best features of the editor.
+
+In turn, when working on the `spawncommand` to compile documentation, one of the properties of a class was a promise which was resolved with an object with a certain type, e.g., `Promise.<PromiseResult>`. _Documentary_ could not display this because the type (`PromiseResult`) was not understood to be inside of the promise. I had to fix that, and add linking to external documentation for imported types as well. The result could be seen in the example below:
+
+[`import('where').Running`](https://why-are-you-running.com) __<a name="running">`Running`</a>__
+
+__<a name="you">`You`</a>__
+
+|   Name   |                 Type                  |     Description      | Default |
+| -------- | ------------------------------------- | -------------------- | ------- |
+| __why*__ | _Promise.&lt;[Running](#running)&gt;_ | Why are you running? | -       |
+
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
+
 ### 18 Tuesday
 
 _Added: 19 Sep 2018 7:00_
@@ -108,7 +223,7 @@ There is also a possibility for the `docks` software which would allow to contro
 - [ ] Add `node-exiftool` to _Documentary_ to add copyright metadata to images.
 - [ ] Add a feature to _Documentary_ to be able to compile a text in SVG with a given font via spawning Chrome and drawing on canvas, therefore it should be a plugin since it's an advanced functionality which would require additional dependencies such as `Chrome Launcher`.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
 
 ### 17 Monday
 
@@ -124,7 +239,7 @@ Tags are important for discoverability, therefore I think the increase in downlo
 
 It would be useful to be able to see at which position in the search a package is against each of its tags. For the `documentation` tag, _Documentary_ is currently somewhere around 400 position, although it's a really great package. However, when it becomes more popular the position will improve as well, as the score is partly calculated according to popularity. _MNP_ should be able to analyse the tags, and it could be possible to install an image on a package page, which would call the _MNP_ server and tell the referrer of the page (i.e. which page people came from). This would show the search query and tags that people found the package from. I am not 100% sure it's technically possible, but there does not seem to be a proxy for an image, like it is on GitHub to prevent this sort of spying. Although it might be unethical, the method is only proposed to analyse and improve the marketing of packages using tags, and is not intended to breach privacy. In any way, NPM has a way to protect against this, but they never will because NPM sucks big time. Just the fact that they had to use somebody else's search engine for packages on their own website shows how desperate the company is.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true" width="15"></a></p>
 
 | <a href='https://github.com/artdecocode/documentary'>![documentary documentation pre-processor](images/18-17/17.png)</a> |
 | ------------------------------------------------------------------------------------------------------------------------ |
@@ -140,8 +255,8 @@ __<a name="world">`World`</a>__: Freedom (n.): To ask nothing. To expect nothing
 
 |      Name      |            Type             |                                          Description                                          | Default |
 | -------------- | --------------------------- | --------------------------------------------------------------------------------------------- | ------- |
-| __integrity*__ | [_Hello_](#hello)           | Integrity is the ability to stand by an idea.                                                 | -       |
-| __evidence*__  | [_JavaScript_](#javascript) | The hardest thing to explain is the glaringly evident which everybody has decided not to see. | -       |
+| __integrity*__ | _[Hello](#hello)_           | Integrity is the ability to stand by an idea.                                                 | -       |
+| __evidence*__  | _[JavaScript](#javascript)_ | The hardest thing to explain is the glaringly evident which everybody has decided not to see. | -       |
 
 I started working on implementing this feature _Documentary_ by writing tests. I realised that the tests could be improved as well which was a work in progress, when instead of re-writing the same code many times to test different inputs for the same transformation, I used _Zoroaster_ masks. I then also improved _Zoroaster_ to be able to read the stream automatically, and compare it to a masks output.
 
@@ -272,7 +387,7 @@ The program accepts the following arguments:
 
 > <img src="images/18-17/factory.svg" align="right" height="70"> A mask **factory** is a function which takes the location of the mask file on a computer and creates a mask test suite. It is called a factory because it is used to create objects according to certain process. In case of _Zoroaster_, an object is a test suite which contains any number of tests, or other test suites.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true" width="15"></a></p>
 
 It was nice to work during the day, and it felt like actual work rather than a full-time hobby because I started at 9am rather than some random time I used to start in previous weeks. I feel more organise with proper planning, however I don't believe it's that important because I was doing a lot of work before planning as well. This means that although there's more structure, it does not mean that the end result is any better. It's just the attitude, and also allows to take things more seriously, i.e. I felt pretty much like at a job, with a short lunch break and some tiredness by 5:30, almost ready to go home (from home lol). Despite that, the feeling was very positive because of the fact that I am not working for somebody building what they want so that I can spend half of the money on rent _etc_, but doing what _I_ love to do, and what _I_ find important, that is, my company. There was a sense of connection with the world as well and other people because everybody is just doing what they can. It's really this expanded perception from bird-view that is related to the awareness of how everything on the planet and in both human and animal societies is connected. It might be called collective unconsciousness because we all exist together and there is always cause and effect. To perceive this is like to slow down time and be able to take in the more general view of the whole planet. However, it might be just a trick of the mind due to fatigue.
 
@@ -328,7 +443,7 @@ This week can be structured in the similar way as the last one, with 2 days work
 
 With the _Art Deco_ JavaScript, it looks like the project could be ready for a good start soon. When _Documentary_ receives an animated terminal, _Zoroaster_ gets a well-composed example, and _À La Mode_ can transpile files on-the-fly, the functional part of the product comes to the release of the first version. It will be time then to think about which domain name to use for the concept, and devise a marketing plan for the best launch. However, it might have to wait before the work in the `labs` section gets implemented, including the `moderne` package, because it seems that it might be an essential part of the project.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true"></a></p>
 
 ### 13 Thursday -- 14 Friday
 
@@ -351,7 +466,7 @@ By the morning, when I wrote description of the section breaks, something unexpe
 
 > TIMER: 8.30 (without browsing for fonts, extracting SVGs)
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/9.svg?sanitize=true"></a></p>
 
 _Documentary_ works in 2 stages: first, it creates a stream of data from a directory with separate files. It pipes that stream into a _Toc_ generator, which extracts the titles so that it can construct the table of contents. The second stage is run afterwards, because when we see the `%TOC%` marker, we need to replace it with the table of contents, therefore we have to scan the whole document for headings first. But because I wanted to reuse the stream of data for both documentation and the Toc, I piped it into a dummy proxy stream, and paused it, and unpaused when the Toc was ready. The idea was that it would accumulate all data in a buffer, which would then be allowed to flow when the Toc is built. There was no problems with it before, but when there was too much data, it stopped working.
 
@@ -359,7 +474,7 @@ _Documentary_ works in 2 stages: first, it creates a stream of data from a direc
 
 The solution was to be generous and create a new stream of data from a directory rather than trying to reuse a buffered one. It worked right away after the implementation as well. The good point is that some other parts of the software were rewritten for easier understanding and maintenance in the future.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true" width="10"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/10.svg?sanitize=true" width="10"></a></p>
 
 When I tried to compile _Documentary_ with _Alamode_, I faced a problem that the svg image files were also processed by the transpiler, which in addition added source maps to it. This shouldn't happen because only JS and JSX files need to be processed by it. Therefore, _Alamode_ also required an update which was added to it.
 
@@ -384,7 +499,7 @@ It is really interesting how orgs and package name spaces can work so well toget
 
 > TIMER: 10 hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/9.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/11.svg?sanitize=true"></a></p>
 
 ### 12 Wednesday
 
@@ -527,13 +642,13 @@ Tomorrow, I will do more research for Demimonde to give fuller descriptions of c
 
 > Timer: 6.30 + 6.12 = 12.42 hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/10.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/12.svg?sanitize=true"></a></p>
 
 ### 11 Tuesday
 
 Market research for _Demimonde_ and coming up with ideas.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/11.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/13.svg?sanitize=true"></a></p>
 
 ### 10 Monday
 
@@ -677,7 +792,7 @@ The daily log could get its own domain, such as <a name="dailylogco">`dailylog.c
 
 > Timer: 9.30 + 3.12 = 12.42 Hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/12.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/14.svg?sanitize=true"></a></p>
 
 ### 7 Friday
 
@@ -779,7 +894,7 @@ There's an [`asciinema`](https://asciinema.org/) project which allows to play te
 
 > Timer: (10.5 - 5.3 = 5.2) + (7.28) = _12 hours 30 min_
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/13.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/15.svg?sanitize=true"></a></p>
 
 ### 6 Thursday
 
@@ -797,7 +912,7 @@ Finished off with a complete good-looking terminal template which could also be 
 
 1. Timer: 8.38 + (5.3) = _13 hours 41 min_
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/14.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/16.svg?sanitize=true"></a></p>
 
 ### 5 Wednesday
 
@@ -861,7 +976,7 @@ Error: example error after await
 
 **Future** Implement remembering the full async stack in `erotic`.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/15.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/17.svg?sanitize=true"></a></p>
 
 ## TODO
 

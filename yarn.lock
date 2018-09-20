@@ -10,6 +10,10 @@
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/@a-la/import/-/import-1.6.1.tgz#ff370c9addd3d59629301d6012289121670e1fdc"
 
+"@a-la/import@1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@a-la/import/-/import-1.6.2.tgz#34666b0e358398b5c795fe9eda09261d522e361a"
+
 "@a-la/markers@1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@a-la/markers/-/markers-1.0.3.tgz#2800c812acce35d01756cd82a0553320d405f38d"
@@ -32,12 +36,6 @@
     "@wrote/read-dir-structure" "1.0.1"
     makepromise "3.0.1"
 
-"@wrote/ensure-path@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@wrote/ensure-path/-/ensure-path-1.0.2.tgz#a98809dab5f957333183b2549e93725176b5202d"
-  dependencies:
-    makepromise "2.0.0"
-
 "@wrote/ensure-path@1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@wrote/ensure-path/-/ensure-path-1.0.3.tgz#7faeff4ebb5b3972b745e0cc85f3e06cbca51d51"
@@ -50,28 +48,28 @@
   dependencies:
     makepromise "2.0.0"
 
-alamode@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/alamode/-/alamode-1.4.0.tgz#e12844a9bdc4d352a01c92d1684adcf12139a61c"
-  dependencies:
-    "@a-la/export" "1.3.0"
-    "@a-la/import" "1.6.1"
-    "@a-la/markers" "1.0.3"
-    "@wrote/ensure-path" "1.0.2"
-    "@wrote/read-dir-structure" "1.0.1"
-    argufy "1.2.1"
-    pirates "4.0.0"
-    restream "3.1.1"
-    source-map "0.7.3"
-    usually "1.0.0"
-    which-stream "1.0.1"
-
 alamode@1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/alamode/-/alamode-1.5.0.tgz#208a87484a4e8849523b150624621232a987772e"
   dependencies:
     "@a-la/export" "1.3.0"
     "@a-la/import" "1.6.1"
+    "@a-la/markers" "1.0.3"
+    "@wrote/ensure-path" "1.0.3"
+    "@wrote/read-dir-structure" "1.0.1"
+    argufy "1.2.1"
+    pirates "4.0.0"
+    restream "3.2.1"
+    source-map "0.7.3"
+    usually "1.0.0"
+    which-stream "1.0.1"
+
+alamode@1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/alamode/-/alamode-1.5.1.tgz#416fce8b8a01fcfd91985361d86484b36e9a1e46"
+  dependencies:
+    "@a-la/export" "1.3.0"
+    "@a-la/import" "1.6.2"
     "@a-la/markers" "1.0.3"
     "@wrote/ensure-path" "1.0.3"
     "@wrote/read-dir-structure" "1.0.1"
@@ -143,16 +141,16 @@ difflib@~0.2.1:
   dependencies:
     heap ">= 0.2.0"
 
-documentary@1.16.1:
-  version "1.16.1"
-  resolved "https://registry.yarnpkg.com/documentary/-/documentary-1.16.1.tgz#71a8076adf78251501d2c26b37deedbc5e039437"
+documentary@1.18.0:
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/documentary/-/documentary-1.18.0.tgz#4c4dc0b3b937b6066fe8d184050e6eac2352841e"
   dependencies:
     "@wrote/clone" "1.0.1"
     "@wrote/ensure-path" "1.0.3"
     argufy "1.2.1"
     catchment "3.1.1"
     erte "1.1.4"
-    mismatch "1.0.2"
+    mismatch "1.0.3"
     pedantry "2.2.0"
     restream "3.2.1"
     rexml "1.1.0"
@@ -221,9 +219,9 @@ makepromise@3.0.1:
   dependencies:
     erotic "1.2.1"
 
-mismatch@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/mismatch/-/mismatch-1.0.2.tgz#80262a922a420b7ace005195ee14508787d9072f"
+mismatch@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/mismatch/-/mismatch-1.0.3.tgz#416cbe164971a8eafc6f3a68c7c63a77bdf06bfb"
 
 node-modules-regexp@^1.0.0:
   version "1.0.0"
@@ -275,6 +273,12 @@ spawncommand@2.0.1:
   dependencies:
     catchment "2.0.1"
 
+spawncommand@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/spawncommand/-/spawncommand-2.1.0.tgz#a5ef60ae7892e8718a9c717fc52fe5f54521e0de"
+  dependencies:
+    catchment "3.1.1"
+
 usually@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/usually/-/usually-1.0.0.tgz#3ace5b09471ddf35cccca85971ca178b5255d4b0"
@@ -295,20 +299,20 @@ yarn-s@1.1.0:
   dependencies:
     spawncommand "1.1.0"
 
-zoroaster@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/zoroaster/-/zoroaster-3.2.0.tgz#679f61443d6253d595c45cab7ac4db98cd69511e"
+zoroaster@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/zoroaster/-/zoroaster-3.5.0.tgz#d34e4b5c01e597428daccffe323cdfde1d7b546d"
   dependencies:
     "@artdeco/clean-stack" "1.0.0"
-    alamode "1.4.0"
+    alamode "1.5.0"
     argufy "1.2.1"
     assert-diff "2.0.3"
     assert-throws "3.1.1"
     catchment "3.1.1"
     erte "1.1.4"
     makepromise "3.0.1"
-    mismatch "1.0.2"
+    mismatch "1.0.3"
     promto "1.0.1"
-    spawncommand "2.0.1"
+    spawncommand "2.1.0"
     usually "1.0.0"
     yarn-s "1.1.0"

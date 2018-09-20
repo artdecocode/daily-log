@@ -1,0 +1,8 @@
+<types>
+  <import name="Running" from="where" link="https://why-are-you-running.com"/>
+  <type name="You">
+    <prop name="why" type="Promise.<Running>">
+      Why are you running?
+    </prop>
+  </type>
+</types>
