@@ -84,13 +84,18 @@ Finally, I listened to Alan Watts lectures and started to get back to Zen. I hav
 
 Although it's great to live in the moment and realise that all things we've accumulated into ourself, such as attachments to people, things and concepts, are illusions of the mind, I still can't reconcile the letting go of those illusions projected onto ego, and the feeling of justice. If something is not fair, there should be consequences for it. You can meditate all day long on the unimportance of early things, but when there come bulldozers to tear up your village where you're sitting, are you supposed to just let it happen thinking that the river of life is constantly moving and the Universe knows the best? Maybe Universe does know the perfect harmony but the human mind is greedy and corrupt.
 
-The body is just as important as the soul because we spend most of you time there, and being spiritual does not mean rejecting the needs and pleasures of the body -- that has a different name, _nihilism_, which is loved so much by religions that tell us that our life here is nothing compared to the Kingdom of God _etc_. It is only a trick they use to confuse people by tapping into they non-knowing of what happens after death. The simplest solution to this question is to just not think about it. Why do you want to know what you will never know. You just have to wait and see. The fact that somebody tells you about it already means it's a complete lie and a trap.
+The body is just as important as the soul because we spend most of our time there, and being spiritual does not mean rejecting the needs and pleasures of the body -- that has a different name, _nihilism_, which is loved so much by religions that tell us that our life here is nothing compared to the Kingdom of God _etc_. It is only a trick they use to confuse people by tapping into they non-knowing of what happens after death. The simplest solution to this question is to just not think about it. Why do you want to know what you will never know. You just have to wait and see. The fact that somebody tells you about it already means it's a complete lie and a trap.
 
-Why not focus on what is material, the body, justice, emotions and feelings but the real ones and not imaginary, made up by the mind. To differentiate between what is real and what is not I guess you have to meditate for a short time, and the artificial pursuits will be gone as the mind quietens down. The subconscious always knows the best and we just puzzle it by over-thinking. But the longer you've thought about certain things in the past, the more real they would seem and the harder it will be to let go of them. And this go all the way up to our birth. Then again, one could assume that everything is artificial in this logic, but it's not because there must be some sense of what is right and natural rather than an influence of the collective mind and its consequences. In the end, the rent must be paid, and I want to be somewhere where I don't have to depend on paying it, and therefore my work, skill and ideas are real, because they will materialise the things in the physical world. Being upset about things without doing anything will not get me anywhere and will only slow me down. What you can't change you should let go of. If there is a perception you can change it, you should and need to try, because trying and doing is also material.
+Why not focus on what is material, the body, justice, emotions and feelings but the real ones and not imaginary, fearful and made up by the mind. To differentiate between what is real and what is not I guess you have to meditate for a short time, and the artificial pursuits will be gone as the mind quietens down. The subconscious always knows the best course of action and we just puzzle it by over-thinking. But the longer you've thought about certain things in the past, the more real they would seem and the harder it will be to let go of them. And this goes all the way up to our birth. Then again, one could assume that everything is artificial in this logic, but it's not because there must be some sense of what is right and natural rather than an influence of the collective mind and its consequence.
+
+In the end, the rent must be paid, and I want to be somewhere where I don't have to depend on paying it, and therefore my work, skill and ideas are real, because they will materialise the things in the physical world. Being upset about things without doing anything will not get me anywhere and will only slow me down. What you can't change you should let go of or change your perception of it. If there is a hope you can change it with a reasonable plan, I believe you should and need to try, because trying and doing is also material. But believe in the plan and picture its success rather than about the past, because the subconscious works the best on the positive directions that it is given. Choose to be happy and calm by affirming it with your heart. There is more to life than to keep old grudges. It's easy if you choose it to me because who is the person who is making it hard? Is it not you?
 
 **FUTURE**
 
 - [ ] Add parsing of types inside of functions in _Documentary_.
+- [ ] Think positively and make believe that it is easy to let go and be sure that the Universe will find the way to express its harmony once the negative thoughts are stopped being projected onto the matrix of the "organism-environment field" any more.
+
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
 
 ### 19 Wednesday
 
@@ -132,7 +137,7 @@ This makes me to comment out that line, and start typing the property name again
 
 > <img src="images/hand2.svg" align="left" height="75"> The number of issues filed against _VS Code_ shows _Art Deco_'s commitment to the best developer experience using its packages. Suggestions for autocompletion is the best indicator of how developer-friendly a package is, because when developers can see those, they have reassurance that everything's going right. There is a general ongoing need to be able to test the suggestions in each package as a separate stage in testing.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true" width="15"></a></p>
 
 Today, I started with getting the `@a-la/import` with the bug fix ready to get merged into _ÀLaMode_ by linking it to test in the `alamode`. This worked fine with the evaluation tests, however then I wanted to change the integration test to use a mask:
 
@@ -210,7 +215,7 @@ __<a name="you">`You`</a>__: It is you.
 | -------- | ------------------------------------- | -------------------- | ------- |
 | __why*__ | _Promise.&lt;[Running](#running)&gt;_ | Why are you running? | -       |
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true" width="15"></a></p>
 
 <img src="images/cow.svg" align="right" height="150">After that was completed, I had to go out to town. On the way back I was hungry and because the place was next to a train station, there was a lot of kebab shops. It felt tempting because of the smell however there is just a general attitude that "I don't eat that". Although I might mentally want that food because I know that it taste nice, I don't physically want to have it. Instead, I can feel that being hungry is OK as a feeling on its own as well, reinforced by the idea that I consciously choose not to be part of the meat eating confusion. This idea gives strength, feeling of having a certain purpose of rejecting to be like the rest of the people.
 
@@ -232,7 +237,7 @@ To focus on positives, I like programming and I want to improve the quality of l
 
 - [ ] Create a tool to test autocompletion for each package. E.g., `salsa` testing used in the _VS Code_ software.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true"></a></p>
 
 ### 18 Tuesday
 
@@ -275,7 +280,7 @@ There is also a possibility for the `docks` software which would allow to contro
 - [ ] Add `node-exiftool` to _Documentary_ to add copyright metadata to images.
 - [ ] Add a feature to _Documentary_ to be able to compile a text in SVG with a given font via spawning Chrome and drawing on canvas, therefore it should be a plugin since it's an advanced functionality which would require additional dependencies such as `Chrome Launcher`.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true"></a></p>
 
 ### 17 Monday
 
@@ -291,7 +296,7 @@ Tags are important for discoverability, therefore I think the increase in downlo
 
 It would be useful to be able to see at which position in the search a package is against each of its tags. For the `documentation` tag, _Documentary_ is currently somewhere around 400 position, although it's a really great package. However, when it becomes more popular the position will improve as well, as the score is partly calculated according to popularity. _MNP_ should be able to analyse the tags, and it could be possible to install an image on a package page, which would call the _MNP_ server and tell the referrer of the page (i.e. which page people came from). This would show the search query and tags that people found the package from. I am not 100% sure it's technically possible, but there does not seem to be a proxy for an image, like it is on GitHub to prevent this sort of spying. Although it might be unethical, the method is only proposed to analyse and improve the marketing of packages using tags, and is not intended to breach privacy. In any way, NPM has a way to protect against this, but they never will because NPM sucks big time. Just the fact that they had to use somebody else's search engine for packages on their own website shows how desperate the company is.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true" width="15"></a></p>
 
 | <a href='https://github.com/artdecocode/documentary'>![documentary documentation pre-processor](images/18-17/17.png)</a> |
 | ------------------------------------------------------------------------------------------------------------------------ |
@@ -439,7 +444,7 @@ The program accepts the following arguments:
 
 > <img src="images/18-17/factory.svg" align="right" height="70"> A mask **factory** is a function which takes the location of the mask file on a computer and creates a mask test suite. It is called a factory because it is used to create objects according to certain process. In case of _Zoroaster_, an object is a test suite which contains any number of tests, or other test suites.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/9.svg?sanitize=true" width="15"></a></p>
 
 It was nice to work during the day, and it felt like actual work rather than a full-time hobby because I started at 9am rather than some random time I used to start in previous weeks. I feel more organise with proper planning, however I don't believe it's that important because I was doing a lot of work before planning as well. This means that although there's more structure, it does not mean that the end result is any better. It's just the attitude, and also allows to take things more seriously, i.e. I felt pretty much like at a job, with a short lunch break and some tiredness by 5:30, almost ready to go home (from home lol). Despite that, the feeling was very positive because of the fact that I am not working for somebody building what they want so that I can spend half of the money on rent _etc_, but doing what _I_ love to do, and what _I_ find important, that is, my company. There was a sense of connection with the world as well and other people because everybody is just doing what they can. It's really this expanded perception from bird-view that is related to the awareness of how everything on the planet and in both human and animal societies is connected. It might be called collective unconsciousness because we all exist together and there is always cause and effect. To perceive this is like to slow down time and be able to take in the more general view of the whole planet. However, it might be just a trick of the mind due to fatigue.
 
@@ -495,7 +500,7 @@ This week can be structured in the similar way as the last one, with 2 days work
 
 With the _Art Deco_ JavaScript, it looks like the project could be ready for a good start soon. When _Documentary_ receives an animated terminal, _Zoroaster_ gets a well-composed example, and _À La Mode_ can transpile files on-the-fly, the functional part of the product comes to the release of the first version. It will be time then to think about which domain name to use for the concept, and devise a marketing plan for the best launch. However, it might have to wait before the work in the `labs` section gets implemented, including the `moderne` package, because it seems that it might be an essential part of the project.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/9.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/10.svg?sanitize=true"></a></p>
 
 ### 13 Thursday -- 14 Friday
 
@@ -518,7 +523,7 @@ By the morning, when I wrote description of the section breaks, something unexpe
 
 > TIMER: 8.30 (without browsing for fonts, extracting SVGs)
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/10.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/11.svg?sanitize=true"></a></p>
 
 _Documentary_ works in 2 stages: first, it creates a stream of data from a directory with separate files. It pipes that stream into a _Toc_ generator, which extracts the titles so that it can construct the table of contents. The second stage is run afterwards, because when we see the `%TOC%` marker, we need to replace it with the table of contents, therefore we have to scan the whole document for headings first. But because I wanted to reuse the stream of data for both documentation and the Toc, I piped it into a dummy proxy stream, and paused it, and unpaused when the Toc was ready. The idea was that it would accumulate all data in a buffer, which would then be allowed to flow when the Toc is built. There was no problems with it before, but when there was too much data, it stopped working.
 
@@ -526,7 +531,7 @@ _Documentary_ works in 2 stages: first, it creates a stream of data from a direc
 
 The solution was to be generous and create a new stream of data from a directory rather than trying to reuse a buffered one. It worked right away after the implementation as well. The good point is that some other parts of the software were rewritten for easier understanding and maintenance in the future.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/11.svg?sanitize=true" width="10"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/12.svg?sanitize=true" width="10"></a></p>
 
 When I tried to compile _Documentary_ with _Alamode_, I faced a problem that the svg image files were also processed by the transpiler, which in addition added source maps to it. This shouldn't happen because only JS and JSX files need to be processed by it. Therefore, _Alamode_ also required an update which was added to it.
 
@@ -551,7 +556,7 @@ It is really interesting how orgs and package name spaces can work so well toget
 
 > TIMER: 10 hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/12.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/13.svg?sanitize=true"></a></p>
 
 ### 12 Wednesday
 
@@ -694,13 +699,13 @@ Tomorrow, I will do more research for Demimonde to give fuller descriptions of c
 
 > Timer: 6.30 + 6.12 = 12.42 hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/13.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/14.svg?sanitize=true"></a></p>
 
 ### 11 Tuesday
 
 Market research for _Demimonde_ and coming up with ideas.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/14.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/15.svg?sanitize=true"></a></p>
 
 ### 10 Monday
 
@@ -844,7 +849,7 @@ The daily log could get its own domain, such as <a name="dailylogco">`dailylog.c
 
 > Timer: 9.30 + 3.12 = 12.42 Hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/15.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/16.svg?sanitize=true"></a></p>
 
 ### 7 Friday
 
@@ -946,7 +951,7 @@ There's an [`asciinema`](https://asciinema.org/) project which allows to play te
 
 > Timer: (10.5 - 5.3 = 5.2) + (7.28) = _12 hours 30 min_
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/16.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/17.svg?sanitize=true"></a></p>
 
 ### 6 Thursday
 
@@ -964,7 +969,7 @@ Finished off with a complete good-looking terminal template which could also be 
 
 1. Timer: 8.38 + (5.3) = _13 hours 41 min_
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/17.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/18.svg?sanitize=true"></a></p>
 
 ### 5 Wednesday
 
@@ -1028,7 +1033,7 @@ Error: example error after await
 
 **Future** Implement remembering the full async stack in `erotic`.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/18.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/19.svg?sanitize=true"></a></p>
 
 ## TODO
 
