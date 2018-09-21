@@ -1,6 +1,6 @@
-### 20 Thursday
+### 20 Thursday: Watts
 
-[<img alt="Those who know do not speak; Those who speak do not know." src="images/19/9-21/watts.svg" width="100%">](https://en.wikipedia.org/wiki/The_Way_of_Zen)
+[<img alt="Those who know do not speak; Those who speak do not know." src="images/18/9-21/watts.svg" width="100%">](https://en.wikipedia.org/wiki/The_Way_of_Zen)
 
 In the morning, I focused on releasing the work from yesterday, including the new `fork` of _Zoroaster_, `spawncommand` and the bug-fix in the _ÀLaMode_, which was then also added to _Zoroaster_. New integration tests using masks were also added to _Zoroaster_, and its introductory description was updated.
 
