@@ -16,6 +16,7 @@
     * [`dailyLog(arg1: string, arg2?: boolean)`](#dailylogarg1-stringarg2-boolean-void)
 - [2018](#2018)
   * [September](#september)
+    * [20 Thursday](#20-thursday)
     * [19 Wednesday](#19-wednesday)
       * [`You`](#you)
     * [18 Tuesday](#18-tuesday)
@@ -68,6 +69,28 @@ import dailyLog from 'daily-log'
 ![https://wakatime.com/ timer](https://wakatime.com/share/@zavr/dc4c568c-1d78-4c3b-a267-8f9deb5c9f25.png)
 
 ## September
+
+### 20 Thursday
+
+[<img alt="Those who know do not speak; Those who speak do not know." src="images/19/9-21/watts.svg" width="100%">](https://en.wikipedia.org/wiki/The_Way_of_Zen)
+
+In the morning, I focused on releasing the work from yesterday, including the new `fork` of _Zoroaster_, `spawncommand` and the bug-fix in the _ÀLaMode_, which was then also added to _Zoroaster_. New integration tests using masks were also added to _Zoroaster_, and its introductory description was updated.
+
+In the evening, I restarted the work on `@idio/core` with the updated _Documentary_ with proper linking of types. This was put away about a month and a half ago, when I started working on _ÀLaMode_. Now I could come back to it and apply the newer features. I also then discovered a few bugs in _Documentary_ such as incorrect parsing of files to extract types, and experiencing an error when parsing JSON tables with `null` data in it. Those were fixed, and I started working on the Macro feature for _Documentary_ which would work as patterns for inserting data.
+
+Finally, I listened to Alan Watts lectures and started to get back to Zen. I have always loved it but now I feel more mature to embrace it in my life. Same as developing software for _Art Deco_, making it better and better over time, I have been improving myself and perception and understanding of life and the universe. By not listening to any "spiritual" lectures, it is easy to forget about the importance of calming the mind down and not being stuck the future or the past. However, the mind is still important as an instrument for planning and performing work to get somewhere in life where I'd feel comfortable.
+
+> [<img src="images/18/9-21/watts.jpg" align="right">](https://www.youtube.com/watch?v=_gbUVnmVJws) Karma (KRI) - action (do). When something happens to me, say I have an accident or an illness, a buddhist or a hindu would say "it was your Karma". The implication is, you have done something wrong in the past as a result of which you reap this unfortunate consequence at a later time. That's not real meaning of Karma. Karma does not mean cause and effect, it simply means "doing", in other words, "you are doing what happens to you". This of course depends upon how you define the term you -- e.g., breathing, am I doing it or is it happening to me? You can look at it either way. I'm growing my hair -- am I doing it or is it happening to me? You can look at it either way. I'm being sick, I'm being destroyed in an accident. If I define myself as the whole field of events, "organism-environment field" which is the real me, then all the things that happen to me may be called my doing. And this is the real sense of Karma. But when we speak about freedom from Karma, freedom from being the puppet of the past, that simply involves the change of your thinking. It involves in other words your getting rid of the habit of thought whereby you define yourself as the result of what has gone before, and instead get into the more plausible and more reasonable habit of thought in terms of which you don't define yourself in terms of what you've done before, but in terms of what're doing now. And that is liberation from the ridiculous situation of being a dog wagged by its tail.
+
+Although it's great to live in the moment and realise that all things we've accumulated into ourself, such as attachments to people, things and concepts, are illusions of the mind, I still can't reconcile the letting go of those illusions projected onto ego, and the feeling of justice. If something is not fair, there should be consequences for it. You can meditate all day long on the unimportance of early things, but when there come bulldozers to tear up your village where you're sitting, are you supposed to just let it happen thinking that the river of life is constantly moving and the Universe knows the best? Maybe Universe does know the perfect harmony but the human mind is greedy and corrupt.
+
+The body is just as important as the soul because we spend most of you time there, and being spiritual does not mean rejecting the needs and pleasures of the body -- that has a different name, _nihilism_, which is loved so much by religions that tell us that our life here is nothing compared to the Kingdom of God _etc_. It is only a trick they use to confuse people by tapping into they non-knowing of what happens after death. The simplest solution to this question is to just not think about it. Why do you want to know what you will never know. You just have to wait and see. The fact that somebody tells you about it already means it's a complete lie and a trap.
+
+Why not focus on what is material, the body, justice, emotions and feelings but the real ones and not imaginary, made up by the mind. To differentiate between what is real and what is not I guess you have to meditate for a short time, and the artificial pursuits will be gone as the mind quietens down. The subconscious always knows the best and we just puzzle it by over-thinking. But the longer you've thought about certain things in the past, the more real they would seem and the harder it will be to let go of them. And this go all the way up to our birth. Then again, one could assume that everything is artificial in this logic, but it's not because there must be some sense of what is right and natural rather than an influence of the collective mind and its consequences. In the end, the rent must be paid, and I want to be somewhere where I don't have to depend on paying it, and therefore my work, skill and ideas are real, because they will materialise the things in the physical world. Being upset about things without doing anything will not get me anywhere and will only slow me down. What you can't change you should let go of. If there is a perception you can change it, you should and need to try, because trying and doing is also material.
+
+**FUTURE**
+
+- [ ] Add parsing of types inside of functions in _Documentary_.
 
 ### 19 Wednesday
 
