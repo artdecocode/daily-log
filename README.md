@@ -16,6 +16,8 @@
     * [`dailyLog(arg1: string, arg2?: boolean)`](#dailylogarg1-stringarg2-boolean-void)
 - [2018](#2018)
   * [September](#september)
+    * [24 Monday: Rqt](#24-monday-rqt)
+      * [`Human`](#human)
     * [*24-28 Week*](#24-28-week)
     * [21 Friday: IdioCore](#21-friday-idiocore)
     * [20 Thursday: Watts](#20-thursday-watts)
@@ -72,6 +74,62 @@ import dailyLog from 'daily-log'
 
 ## September
 
+### 24 Monday: Rqt
+
+![](images/18/rqt.png)
+
+Having completed the _IdioCore_, I went back to the work in progress on the `@rqt` scope. _Rqt_ allows to make network requests, and the underlying package, _Aqt_ (advanced request) was implemented before. The job was to separate request functions into separate ones by logic, i.e., `rqt` for string requests, `bqt` for Buffer requests, `sqt` for streams and `jqt` for _JSON_ object requests. This would allow to correctly infer returned types.
+
+The _VS Code_ insiders had stopped working correctly for discovered types, such as `koa`, in the morning, so I filed a bug in _TypeScript_.
+
+<details>
+<summary><a href="https://github.com/Microsoft/TypeScript/issues/27302">Importing types in JS files stopped working.</a></summary>
+Since last week, importing of external types has stopped working.
+
+![screen shot 2018-09-24 at 12 47 10](https://user-images.githubusercontent.com/21156791/45945983-06b32b00-bff8-11e8-85ec-0bf834d73f6b.png)
+
+![screen shot 2018-09-24 at 12 52 03](https://user-images.githubusercontent.com/21156791/45946161-b9838900-bff8-11e8-8c16-e701c1c87b84.png)
+
+![screen shot 2018-09-24 at 13 01 20](https://user-images.githubusercontent.com/21156791/45946651-32cfab80-bffa-11e8-9987-184df5aa7f3d.png)
+
+It works in non-insiders. This has definitely worked in insiders fine last week.
+
+![screen shot 2018-09-24 at 12 48 03](https://user-images.githubusercontent.com/21156791/45946018-28acad80-bff8-11e8-92b3-a692e5f3a859.png)
+
+![screen shot 2018-09-24 at 13 02 20](https://user-images.githubusercontent.com/21156791/45946657-382cf600-bffa-11e8-8349-1cbad8244a29.png)
+
+
+And no I don't want to convert to TypeScript.
+
+![test](https://user-images.githubusercontent.com/21156791/45973889-5ae5fb80-c048-11e8-9100-ccead5b554bc.gif)
+</details>
+
+I had to use _VS Code_ non-insiders and forgot to install WakaTime extension there, so the tracking of time for the day has been partly lost.
+
+Despite the bug, it gave me ideas into how autocompletion hints could be implemented. That is, using a [_TypeScript_ standalone server](https://github.com/Microsoft/TypeScript/wiki/Standalone-Server-%28tsserver%29), which is embedded in _VS Code_ and used to show hints. By running the server, it is possible to send requests to it and receive what hints have come up. Such testing would make sure that autocompletion hints are shown. This, however, requires the installation of _TypeScript_ server which can be quite bulky and we strive to reduce dependencies. This means that more native implementation could be done, but this increases the risk that what is tested is not what shows up in the editor, whereas with the _TS_ server, we will know for sure what the _IDE_ will show.
+
+The work of the request library went well and I tested `rqt` against `@idio/core` with implemented compression. I found some problems with documentation of _IdioCore_, when links to types were interfering with links to titles. I updated _Documentary_ to fix this bug, and also implemented parsing of types inside `Object.<string, Type>` which now is also linked. I created a new package, [`typal`](https://github.com/artdecocode/typal) to contain the logic of creating types from XML and serializing them into Markdown. The package needs documenting and refactoring of extraction and generation of type information needs to be moved there as well.
+
+[`import('Cosmos').Intelligence`](https://www.goodreads.com/author/quotes/30378.Sadhguru) __<a name="intelligence">`Intelligence`</a>__
+
+__<a name="human">`Human`</a>__
+
+|      Name      |               Type                |                                                                   Description                                                                   | Default |
+| -------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| __Character*__ | _Object.&lt;string, Intelligence_ | The sign of intelligence is that you are constantly wondering. Idiots are always dead sure about every damn thing they are doing in their life. | -       |
+
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true" width="15"></a></p>
+
+Spiritually, there is a thought that even if a person wronged you, it is the best to be grateful to him as he or she moved you closer to the understanding of the true meaning of life. Great many people won't wake up tomorrow, and it is an amazing thing to be alife just now. You do not have to grant people the privilige of making you angry or sad or happy, only you can choose it for yourself. The life is happening right now, and our bodies is the food that we've gathered, our minds is the impressions that we've gathered, but is it us? We can control our thoughts and even choose not to think.
+
+**FUTURE**
+
+- [ ] Write a plugin for _VS Code_ to embed markdown images by drag-n-drop.
+- [ ] Work on the autocompletion testing.
+- [ ] Fix section breaks in _Documentary_ so that they don't all change after 22.
+
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
+
 ### *24-28 Week*
 
 This week I will be working on the _nodejs.tools_ website. Last week I planned to work on the terminal window for _Documentary_ that I want to be in the version 1 of _NodeTools_, however it seems to be quite a lot of work. I have managed to extract typedefs in _Documentary_ and use it to document _IdioCore_ which was good. I also added macros which is a very useful feature and a selling point. No research for Demimonde was conducted as there were a couple of days where I didn't get a chance to work full-time. This week, I will continue working on _Idio_, because I most definitely need a webserver for the websites described below.
@@ -82,7 +140,7 @@ There were new features to _Zoroaster_ with better mask testing of forks. It is 
 
 In addition, I fixed the `medium.com/art_deco` handle so that I can use it later to promote _NodeTools_. This will be the new name for the _Art Deco Package_ concept, because the tools are for Node.js, but they will follow the _Art Deco_ philosophy. There needs to be an explanation of what the characteristics of this philosophy are, such as minimal dependencies, separation of concerns into scopes, and full attention to the developer experience.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true" width="15"></a></p>
 
 Since Node 10, there is going to be a way to create a coverage report using V8 coverage, such that no transformation of code is ever necessary. It is great because it removes the need to orchestrate code with markers used for coverage, and it means there does not need to be any _AST_ analyser. This has been implemented with [c8](https://github.com/bcoe/c8), however this package has the dependencies to transform into istanbul reports. I want to make my own tool, _Tutankhamun_ to be generate coverage reports, both client-side and as a service for GitHub integration. It could be hosted either at [Tutankhamun.io](Tutankhamun.io) or [Tutankhamen.co](Tutankhamen.co).
 
@@ -93,7 +151,7 @@ Moreover, one of the outcomes of last week was that _MNP_ as a website should al
 1. Adding a pixel tag to gather `referer` headers to see where users of packages come from (which search terms or tags).
 1. Breaking down the scoring algorithm used by the search engine to suggest improvements, such as *Close 5 issues to climb up 5 positions*.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true" width="15"></a></p>
 
 The planning therefore is as follows:
 
@@ -119,7 +177,7 @@ The planning therefore is as follows:
 
 - [ ] `fork-context` package to spawn processes and send data to them. This could also be part of `zoroaster`'s fork mask property.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true"></a></p>
 
 ### 21 Friday: IdioCore
 
@@ -137,7 +195,7 @@ In the end, I tried to record an [_Appshot_](https://github.com/artdecocode/apps
 - [ ] Improve _Appshot_ to have a web interface, with visual selection of windows, and selecting the cropping area of the window.
 - [ ] Display an error in the `window-info` package, such as when Python does not have `Quartz` library installed.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true"></a></p>
 
 ### 20 Thursday: Watts
 
@@ -164,7 +222,7 @@ In the end, the rent must be paid, and I want to be somewhere where I don't have
 - [ ] Add parsing of types inside of functions in _Documentary_.
 - [ ] Think positively and make believe that it is easy to let go and be sure that the Universe will find the way to express its harmony once the negative thoughts are stopped being projected onto the matrix of the "organism-environment field" any more.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/9.svg?sanitize=true"></a></p>
 
 ### 19 Wednesday
 
@@ -206,7 +264,7 @@ This makes me to comment out that line, and start typing the property name again
 
 > <img src="images/hand2.svg" align="left" height="75"> The number of issues filed against _VS Code_ shows _Art Deco_'s commitment to the best developer experience using its packages. Suggestions for autocompletion is the best indicator of how developer-friendly a package is, because when developers can see those, they have reassurance that everything's going right. There is a general ongoing need to be able to test the suggestions in each package as a separate stage in testing.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/10.svg?sanitize=true" width="15"></a></p>
 
 Today, I started with getting the `@a-la/import` with the bug fix ready to get merged into _ÀLaMode_ by linking it to test in the `alamode`. This worked fine with the evaluation tests, however then I wanted to change the integration test to use a mask:
 
@@ -284,7 +342,7 @@ __<a name="you">`You`</a>__: It is you.
 | -------- | ------------------------------------- | -------------------- | ------- |
 | __why*__ | _Promise.&lt;[Running](#running)&gt;_ | Why are you running? | -       |
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/9.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/11.svg?sanitize=true" width="15"></a></p>
 
 <img src="images/cow.svg" align="right" height="150">After that was completed, I had to go out to town. On the way back I was hungry and because the place was next to a train station, there was a lot of kebab shops. It felt tempting because of the smell however there is just a general attitude that "I don't eat that". Although I might mentally want that food because I know that it taste nice, I don't physically want to have it. Instead, I can feel that being hungry is OK as a feeling on its own as well, reinforced by the idea that I consciously choose not to be part of the meat eating confusion. This idea gives strength, feeling of having a certain purpose of rejecting to be like the rest of the people.
 
@@ -306,7 +364,7 @@ To focus on positives, I like programming and I want to improve the quality of l
 
 - [ ] Create a tool to test autocompletion for each package. E.g., `salsa` testing used in the _VS Code_ software.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/10.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/12.svg?sanitize=true"></a></p>
 
 ### 18 Tuesday
 
@@ -349,7 +407,7 @@ There is also a possibility for the `docks` software which would allow to contro
 - [ ] Add `node-exiftool` to _Documentary_ to add copyright metadata to images.
 - [ ] Add a feature to _Documentary_ to be able to compile a text in SVG with a given font via spawning Chrome and drawing on canvas, therefore it should be a plugin since it's an advanced functionality which would require additional dependencies such as `Chrome Launcher`.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/11.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/13.svg?sanitize=true"></a></p>
 
 ### 17 Monday
 
@@ -365,7 +423,7 @@ Tags are important for discoverability, therefore I think the increase in downlo
 
 It would be useful to be able to see at which position in the search a package is against each of its tags. For the `documentation` tag, _Documentary_ is currently somewhere around 400 position, although it's a really great package. However, when it becomes more popular the position will improve as well, as the score is partly calculated according to popularity. _MNP_ should be able to analyse the tags, and it could be possible to install an image on a package page, which would call the _MNP_ server and tell the referrer of the page (i.e. which page people came from). This would show the search query and tags that people found the package from. I am not 100% sure it's technically possible, but there does not seem to be a proxy for an image, like it is on GitHub to prevent this sort of spying. Although it might be unethical, the method is only proposed to analyse and improve the marketing of packages using tags, and is not intended to breach privacy. In any way, NPM has a way to protect against this, but they never will because NPM sucks big time. Just the fact that they had to use somebody else's search engine for packages on their own website shows how desperate the company is.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/12.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/14.svg?sanitize=true" width="15"></a></p>
 
 | <a href='https://github.com/artdecocode/documentary'>![documentary documentation pre-processor](images/18-17/17.png)</a> |
 | ------------------------------------------------------------------------------------------------------------------------ |
@@ -513,7 +571,7 @@ The program accepts the following arguments:
 
 > <img src="images/18-17/factory.svg" align="right" height="70"> A mask **factory** is a function which takes the location of the mask file on a computer and creates a mask test suite. It is called a factory because it is used to create objects according to certain process. In case of _Zoroaster_, an object is a test suite which contains any number of tests, or other test suites.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/13.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/15.svg?sanitize=true" width="15"></a></p>
 
 It was nice to work during the day, and it felt like actual work rather than a full-time hobby because I started at 9am rather than some random time I used to start in previous weeks. I feel more organise with proper planning, however I don't believe it's that important because I was doing a lot of work before planning as well. This means that although there's more structure, it does not mean that the end result is any better. It's just the attitude, and also allows to take things more seriously, i.e. I felt pretty much like at a job, with a short lunch break and some tiredness by 5:30, almost ready to go home (from home lol). Despite that, the feeling was very positive because of the fact that I am not working for somebody building what they want so that I can spend half of the money on rent _etc_, but doing what _I_ love to do, and what _I_ find important, that is, my company. There was a sense of connection with the world as well and other people because everybody is just doing what they can. It's really this expanded perception from bird-view that is related to the awareness of how everything on the planet and in both human and animal societies is connected. It might be called collective unconsciousness because we all exist together and there is always cause and effect. To perceive this is like to slow down time and be able to take in the more general view of the whole planet. However, it might be just a trick of the mind due to fatigue.
 
@@ -569,7 +627,7 @@ This week can be structured in the similar way as the last one, with 2 days work
 
 With the _Art Deco_ JavaScript, it looks like the project could be ready for a good start soon. When _Documentary_ receives an animated terminal, _Zoroaster_ gets a well-composed example, and _À La Mode_ can transpile files on-the-fly, the functional part of the product comes to the release of the first version. It will be time then to think about which domain name to use for the concept, and devise a marketing plan for the best launch. However, it might have to wait before the work in the `labs` section gets implemented, including the `moderne` package, because it seems that it might be an essential part of the project.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/14.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/16.svg?sanitize=true"></a></p>
 
 ### 13 Thursday -- 14 Friday
 
@@ -592,7 +650,7 @@ By the morning, when I wrote description of the section breaks, something unexpe
 
 > TIMER: 8.30 (without browsing for fonts, extracting SVGs)
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/15.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/17.svg?sanitize=true"></a></p>
 
 _Documentary_ works in 2 stages: first, it creates a stream of data from a directory with separate files. It pipes that stream into a _Toc_ generator, which extracts the titles so that it can construct the table of contents. The second stage is run afterwards, because when we see the `%TOC%` marker, we need to replace it with the table of contents, therefore we have to scan the whole document for headings first. But because I wanted to reuse the stream of data for both documentation and the Toc, I piped it into a dummy proxy stream, and paused it, and unpaused when the Toc was ready. The idea was that it would accumulate all data in a buffer, which would then be allowed to flow when the Toc is built. There was no problems with it before, but when there was too much data, it stopped working.
 
@@ -600,7 +658,7 @@ _Documentary_ works in 2 stages: first, it creates a stream of data from a direc
 
 The solution was to be generous and create a new stream of data from a directory rather than trying to reuse a buffered one. It worked right away after the implementation as well. The good point is that some other parts of the software were rewritten for easier understanding and maintenance in the future.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/16.svg?sanitize=true" width="10"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/18.svg?sanitize=true" width="10"></a></p>
 
 When I tried to compile _Documentary_ with _Alamode_, I faced a problem that the svg image files were also processed by the transpiler, which in addition added source maps to it. This shouldn't happen because only JS and JSX files need to be processed by it. Therefore, _Alamode_ also required an update which was added to it.
 
@@ -625,7 +683,7 @@ It is really interesting how orgs and package name spaces can work so well toget
 
 > TIMER: 10 hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/17.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/19.svg?sanitize=true"></a></p>
 
 ### 12 Wednesday
 
@@ -768,13 +826,13 @@ Tomorrow, I will do more research for Demimonde to give fuller descriptions of c
 
 > Timer: 6.30 + 6.12 = 12.42 hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/18.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/20.svg?sanitize=true"></a></p>
 
 ### 11 Tuesday
 
 Market research for _Demimonde_ and coming up with ideas.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/19.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/21.svg?sanitize=true"></a></p>
 
 ### 10 Monday
 
@@ -918,7 +976,7 @@ The daily log could get its own domain, such as <a name="dailylogco">`dailylog.c
 
 > Timer: 9.30 + 3.12 = 12.42 Hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/20.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/22.svg?sanitize=true"></a></p>
 
 
 
@@ -1022,7 +1080,7 @@ There's an [`asciinema`](https://asciinema.org/) project which allows to play te
 
 > Timer: (10.5 - 5.3 = 5.2) + (7.28) = _12 hours 30 min_
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/21.svg?sanitize=true"></a></p>### 6 Thursday
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>### 6 Thursday
 
 The day started by continuing to find suitable packages to compile w/ `documentary`. [`json2svg`](https://www.npmjs.com/package/json2csv) looked good yesterday, however it had a screenshot of a PNG. Therefore it was decided to be a great feature for _Documentary_ to make screenshots of output from a terminal. The search revealed existence of [`ansi-to-svg`](https://github.com/F1LT3R/ansi-to-svg) which is not very popular, but amazing. To start off with, a [Yosemite UI Kit](https://www.sketchappsources.com/tag/yosemite.html) for Sketch was downloaded and the title bar exported as SVG.
 
@@ -1038,7 +1096,7 @@ Finished off with a complete good-looking terminal template which could also be 
 
 1. Timer: 8.38 + (5.3) = _13 hours 41 min_
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/22.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
 ### 5 Wednesday
 
@@ -1102,7 +1160,7 @@ Error: example error after await
 
 **Future** Implement remembering the full async stack in `erotic`.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
 ## TODO
 
