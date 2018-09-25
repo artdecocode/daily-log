@@ -84,6 +84,7 @@ The _VS Code_ insiders had stopped working correctly for discovered types, such 
 
 <details>
 <summary><a href="https://github.com/Microsoft/TypeScript/issues/27302">Importing types in JS files stopped working.</a></summary>
+<table><tr><td>
 Since last week, importing of external types has stopped working.
 
 ![screen shot 2018-09-24 at 12 47 10](https://user-images.githubusercontent.com/21156791/45945983-06b32b00-bff8-11e8-85ec-0bf834d73f6b.png)
@@ -102,7 +103,8 @@ It works in non-insiders. This has definitely worked in insiders fine last week.
 And no I don't want to convert to TypeScript.
 
 ![test](https://user-images.githubusercontent.com/21156791/45973889-5ae5fb80-c048-11e8-9100-ccead5b554bc.gif)
-</details>
+</td></tr></table>
+</details><br/>
 
 I had to use _VS Code_ non-insiders and forgot to install WakaTime extension there, so the tracking of time for the day has been partly lost.
 
@@ -114,9 +116,9 @@ The work of the request library went well and I tested `rqt` against `@idio/core
 
 __<a name="human">`Human`</a>__
 
-|      Name      |               Type                |                                                                   Description                                                                   | Default |
-| -------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| __Character*__ | _Object.&lt;string, Intelligence_ | The sign of intelligence is that you are constantly wondering. Idiots are always dead sure about every damn thing they are doing in their life. | -       |
+|      Name      |                 Type                  |                                                                   Description                                                                   | Default |
+| -------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| __Character*__ | _Object.&lt;string, Intelligence&gt;_ | The sign of intelligence is that you are constantly wondering. Idiots are always dead sure about every damn thing they are doing in their life. | -       |
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true" width="15"></a></p>
 
@@ -629,6 +631,10 @@ With the _Art Deco_ JavaScript, it looks like the project could be ready for a g
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/16.svg?sanitize=true"></a></p>
 
+
+
+
+
 ### 13 Thursday -- 14 Friday
 
 Today I decided to complete the update for _Pedantry_ to be able to compile the blog correctly in the descenting order by date. It was implemented using a natural sort available in JavaScript therefore it wasn't complicated. Other features included adding a single new line or a blank line (two new lines) between each file read by _Pedantry_.
@@ -683,9 +689,7 @@ It is really interesting how orgs and package name spaces can work so well toget
 
 > TIMER: 10 hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/19.svg?sanitize=true"></a></p>
-
-### 12 Wednesday
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/19.svg?sanitize=true"></a></p>### 12 Wednesday
 
 Today I continued the research on Demimonde, and made an offer for the domain name I want. Gladly it is for sale and although the price is more than a few thousand, it is a reasonable price for that domain. Here is a link to some [notable sales](https://www.gritbrokerage.com/notable-sales).
 
@@ -826,9 +830,7 @@ Tomorrow, I will do more research for Demimonde to give fuller descriptions of c
 
 > Timer: 6.30 + 6.12 = 12.42 hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/20.svg?sanitize=true"></a></p>
-
-### 11 Tuesday
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/20.svg?sanitize=true"></a></p>### 11 Tuesday
 
 Market research for _Demimonde_ and coming up with ideas.
 
@@ -980,6 +982,10 @@ The daily log could get its own domain, such as <a name="dailylogco">`dailylog.c
 
 
 
+
+
+
+
 ### 7 Friday
 
 Viva la [`SVaG`](https://svag.co)! As continuation from yesterday's work on making a terminal SVG, I started the day by figuring out that the best course of action would be to create a package which would export multiple UI elements as SVGs. The elements can be dynamically generated, therefore a whole library was written. In the beginning, I just worked on the `svag` package and was putting lib methods and UI elements such as `terminal` in there, but quickly changed to registering a new organisation on `npm` [`svag`](https://www.npmjs.com/org/svag) and on GitHub, and used `mnp` to spawn packages.
@@ -1096,9 +1102,7 @@ Finished off with a complete good-looking terminal template which could also be 
 
 1. Timer: 8.38 + (5.3) = _13 hours 41 min_
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
-
-### 5 Wednesday
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>### 5 Wednesday
 
 Working on hiding error stack for the `restream` and starting to implement it in the `erotic`. Figuring out that Node.js [hides an async stack](https://github.com/nodejs/node/issues/11865) behind `<anonymous>`, but only if error was thrown after the first `await`.
 
@@ -1160,9 +1164,7 @@ Error: example error after await
 
 **Future** Implement remembering the full async stack in `erotic`.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
-
-## TODO
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>## TODO
 
 - [ ] Add a new item to the todo list.
 

@@ -8,6 +8,7 @@ The _VS Code_ insiders had stopped working correctly for discovered types, such 
 
 <details>
 <summary><a href="https://github.com/Microsoft/TypeScript/issues/27302">Importing types in JS files stopped working.</a></summary>
+<table><tr><td>
 Since last week, importing of external types has stopped working.
 
 ![screen shot 2018-09-24 at 12 47 10](https://user-images.githubusercontent.com/21156791/45945983-06b32b00-bff8-11e8-85ec-0bf834d73f6b.png)
@@ -26,7 +27,8 @@ It works in non-insiders. This has definitely worked in insiders fine last week.
 And no I don't want to convert to TypeScript.
 
 ![test](https://user-images.githubusercontent.com/21156791/45973889-5ae5fb80-c048-11e8-9100-ccead5b554bc.gif)
-</details>
+</td></tr></table>
+</details><br/>
 
 I had to use _VS Code_ non-insiders and forgot to install WakaTime extension there, so the tracking of time for the day has been partly lost.
 

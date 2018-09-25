@@ -1,7 +1,7 @@
 <types>
   <import name="Intelligence" from="Cosmos" link="https://www.goodreads.com/author/quotes/30378.Sadhguru" />
   <type name="Human">
-    <prop name="Character" type="Object.<string, Intelligence">
+    <prop name="Character" type="Object.<string, Intelligence>">
       The sign of intelligence is that you are constantly wondering. Idiots are always dead sure about every damn thing they are doing in their life.
     </prop>
   </type>
