@@ -18,16 +18,16 @@
   * [September](#september)
     * [25-26 Tuesday-Wednesday (rqt w/ namecheap)](#25-26-tuesday-wednesday-rqt-w-namecheap)
     * [24 Monday: Rqt](#24-monday-rqt)
-      * [`Human`](#human)
+      * [`Human`](#type-human)
     * [*24-28 Week*](#24-28-week)
     * [21 Friday: IdioCore](#21-friday-idiocore)
     * [20 Thursday: Watts](#20-thursday-watts)
     * [19 Wednesday](#19-wednesday)
-      * [`You`](#you)
+      * [`You`](#type-you)
     * [18 Tuesday](#18-tuesday)
     * [17 Monday](#17-monday)
-      * [`Hello`](#hello)
-      * [`World`](#world)
+      * [`Hello`](#type-hello)
+      * [`World`](#type-world)
     * [17-24 Week Plan](#17-24-week-plan)
     * [13 Thursday -- 14 Friday](#13-thursday----14-friday)
     * [12 Wednesday](#12-wednesday)
@@ -113,7 +113,7 @@ It's also becoming more fun to program with the request library and the web serv
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true" width="15"></a></p>
 
-I wanted to write a book, _Art Deco Node.js_ with all up-to-date practices for developing a modern package, including how to use scopes, implement, test, document and maintain packages. It would take time but I could really shed some light into how I successfully approach the development process including what things are important (first and foremost, developer experience) and how to organise the routine of making Node.js software. The happy world for me would be where I just had my Tier 1 talent visa and didn't have to worry about finding other ways, without the horrible people who don't understand anything about Node saying rude things about me. It's really hard to forgive and I don't think I can. It's great to think about more eternal things but when it gets cold and grey it becomes more about survival and hence less romantic and more real. I so badly wish they pay dearly for what things they have said. The plan is to finish with _NodeTools_ so that I can get some real experts on my side who'll confirm my true skill level.
+I wanted to write a book, _Art Deco Node.js_ with all up-to-date practices for developing a modern package, including how to use scopes, implement, test, document and maintain packages. It would take time but I could really shed some light into how I successfully approach the development process including what things are important (first and foremost, developer experience) and how to organise the routine of making Node.js software. The happy world for me would be where I just had my Tier 1 talent visa and didn't have to worry about finding other ways, without the horrible people who don't understand anything about Node criticizing my work without having ever created anything themselves. They are so miserable because of incapacity to really know what they are seeing and arrogantly failing to grasp the true meaning of what's going on. It's really hard to forgive and I don't think I can. It's great to think about more eternal things but when it gets cold and grey it becomes more about survival and hence less romantic and more real. I so badly wish they pay dearly for what things they have said. The plan is to finish with _NodeTools_ so that I can get some real experts on my side who'll confirm my true skill level.
 
 - [ ] Check how types for packages work (or don't work) in other editors.
 
@@ -155,13 +155,13 @@ Despite the bug, it gave me ideas into how autocompletion hints could be impleme
 
 The work of the request library went well and I tested `rqt` against `@idio/core` with implemented compression. I found some problems with documentation of _IdioCore_, when links to types were interfering with links to titles. I updated _Documentary_ to fix this bug, and also implemented parsing of types inside `Object.<string, Type>` which now is also linked. I created a new package, [`typal`](https://github.com/artdecocode/typal) to contain the logic of creating types from XML and serializing them into Markdown. The package needs documenting and refactoring of extraction and generation of type information needs to be moved there as well.
 
-[`import('Cosmos').Intelligence`](https://www.goodreads.com/author/quotes/30378.Sadhguru) __<a name="intelligence">`Intelligence`</a>__
+[`import('Cosmos').Intelligence`](https://www.goodreads.com/author/quotes/30378.Sadhguru) __<a name="type-intelligence">`Intelligence`</a>__
 
-__<a name="human">`Human`</a>__
+__<a name="type-human">`Human`</a>__
 
-|      Name      |                 Type                  |                                                                   Description                                                                   | Default |
-| -------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| __Character*__ | _Object.&lt;string, Intelligence&gt;_ | The sign of intelligence is that you are constantly wondering. Idiots are always dead sure about every damn thing they are doing in their life. | -       |
+|      Name      |                            Type                             |                                                                   Description                                                                   |
+| -------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| __Character*__ | _Object.&lt;string, [Intelligence](#type-intelligence)&gt;_ | The sign of intelligence is that you are constantly wondering. Idiots are always dead sure about every damn thing they are doing in their life. |
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true" width="15"></a></p>
 
@@ -379,13 +379,13 @@ When working on this feature, I had to change the `spawncommand` package to prov
 
 In turn, when working on the `spawncommand` to compile documentation, one of the properties of a class was a promise which was resolved with an object with a certain type, e.g., `Promise.<PromiseResult>`. _Documentary_ could not display this because the type (`PromiseResult`) was not understood to be inside of the promise. I had to fix that, and add linking to external documentation for imported types as well. The result could be seen in the example below:
 
-[`import('where').Running`](https://why-are-you-running.com) __<a name="running">`Running`</a>__: The process of moving fast from and to a certain location.
+[`import('where').Running`](https://why-are-you-running.com) __<a name="type-running">`Running`</a>__: The process of moving fast from and to a certain location.
 
-__<a name="you">`You`</a>__: It is you.
+__<a name="type-you">`You`</a>__: It is you.
 
-|   Name   |                 Type                  |     Description      | Default |
-| -------- | ------------------------------------- | -------------------- | ------- |
-| __why*__ | _Promise.&lt;[Running](#running)&gt;_ | Why are you running? | -       |
+|   Name   |                    Type                    |     Description      |
+| -------- | ------------------------------------------ | -------------------- |
+| __why*__ | _Promise.&lt;[Running](#type-running)&gt;_ | Why are you running? |
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/14.svg?sanitize=true" width="15"></a></p>
 
@@ -476,16 +476,16 @@ It would be useful to be able to see at which position in the search a package i
 
 Today was a good and productive day, when I focussed on the **essential** work to implement linking of `@typedef` titles across the whole documentation. This feature was needed to continue with `@idio/core` to describe different sections of the configuration in multiple sections of the documentation, but be able to link to them from the overall, combined configuration.
 
-`import('NodeJS').JavaScript` __<a name="javascript">`JavaScript`</a>__
+`import('NodeJS').JavaScript` __<a name="type-javascript">`JavaScript`</a>__
 
-__<a name="hello">`Hello`</a>__: When life gives you lemons, make a lemonade.
+__<a name="type-hello">`Hello`</a>__: When life gives you lemons, make a lemonade.
 
-__<a name="world">`World`</a>__: Freedom (n.): To ask nothing. To expect nothing. To depend on nothing.
+__<a name="type-world">`World`</a>__: Freedom (n.): To ask nothing. To expect nothing. To depend on nothing.
 
-|      Name      |            Type             |                                          Description                                          | Default |
-| -------------- | --------------------------- | --------------------------------------------------------------------------------------------- | ------- |
-| __integrity*__ | _[Hello](#hello)_           | Integrity is the ability to stand by an idea.                                                 | -       |
-| __evidence*__  | _[JavaScript](#javascript)_ | The hardest thing to explain is the glaringly evident which everybody has decided not to see. | -       |
+|      Name      |               Type               |                                          Description                                          |
+| -------------- | -------------------------------- | --------------------------------------------------------------------------------------------- |
+| __integrity*__ | _[Hello](#type-hello)_           | Integrity is the ability to stand by an idea.                                                 |
+| __evidence*__  | _[JavaScript](#type-javascript)_ | The hardest thing to explain is the glaringly evident which everybody has decided not to see. |
 
 I started working on implementing this feature _Documentary_ by writing tests. I realised that the tests could be improved as well which was a work in progress, when instead of re-writing the same code many times to test different inputs for the same transformation, I used _Zoroaster_ masks. I then also improved _Zoroaster_ to be able to read the stream automatically, and compare it to a masks output.
 
