@@ -134,6 +134,8 @@ export default ts
 
 - [ ] Allow mnp to override the package scope when creating packages.
 
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
+
 ### 27 Thursday: MNP
 
 I have updated the `@mnp/package` which is the default template to create packages to have _Zoroaster_ masks set up, and documentation with section breaks. When integrating the package into the MNP itself, I decided to update it and test with `temp-context`. This would create a new package in the system's temp directory, where a `.mnprc` config file would have to exist. Despite that, there was a bug in the `@wrote/rm` that did not remove symbolic link files. To test the fix for that, I have to update `@wrore/clone` as well because testing required cloning a symbolic link, which was not working either. In the end, all `@wrote/rm`, `@wrote/clone` and `temp-context` were updated to work with symbolic links. In addition, the `temp-context` can take a snapshot of a particular folder in the temp directory.
@@ -166,7 +168,7 @@ export default class Context extends TempContext {
 
 Using a proxy, the methods are also bound at the time of requiring them, which is more efficient because there is no need to explicitly iterate through each available method and bind it. After the work in _Zoroaster_ was completed, I used the same idea in `@rqt/github` which is the GitHub API I also worked on. Because there would be many methods for the API and they all need to have an access to the token (identification of the user), it is needed to bind them to the instance so that they are able to make signed requests. Initially, I just bound them with standard `bind`, however if we run a server, and for every requests that uses the GitHub API there is a need to perform 1000 bindings, it becomes inefficient. Therefore, _Proxy_ is a great modern solution for dynamically binding methods and I am glad I found an application for it.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true" width="15"></a></p>
 
 It is not the case that we should be dismissive with ourselves for certain reasonable concerns that we have, e.g., if I don't like something or am upset about something at the work place, part of the reaction would be to tell myself that I should stop moaning about it. It is counter-productive because we have to accept ourselves, especially if the concern is valid. What is needed is to move from the language of complaint, to the language of commitment in a way that would identify what we are not doing about the situation, or what we can do about it. For example, if the concern is "I am never listened to", the commitment would be "The good communication is the core value of the people in this company", or "If I was the boss, I would give a forum to my employees", which shows the commitment to running the company in a way where people receive an opportunity to speak.
 
@@ -174,7 +176,7 @@ Also when converting the complaints into narratives and positives they are moved
 
 There is also no need to jump to the identification of the current behaviour as erroneous: "I see my mistake of never speaking up and now I will always do it". Such an attitude is similar to making New Year's resolutions because we start with enthusiasm that quickly dies out in the reality. It is not the point to see what things are going wrong, because they would still be there even if they are solved for a single person. A good leader would attend to the problem and identify its root and cause, and attempt to solve it in a creative way. The point of problems is to learn from them, for example, in school a Match teacher would give homework to solve hard problems rather than easy ones, because she wants pupils to learn by solving them. She would value much less problems that are easy to solve as they do not stretch the minds of pupils. Same in life, when we receive a problem, it is even better if it is hard because it gives us an opportunity to learn from it and come out stronger, cleverer and more prepared for the future.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true" width="15"></a></p>
 
 On the other hand, when things get emotional and there are deeply rooted feelings, it might be very hard to approach the problem in a mature way. I think a help of a professional such as a therapist can help there. I keep counting after how many seconds I start thinking about me being treated wrong after I wake up and it is usually in around 20-30 seconds. The thought then stays on for the whole day. This has happened before and I would rather much prefer that I was recognised for my true achievements and potential and didn't have this negative mind. It is true to say that people have conditioned me into that mind frame and I know what it would mean to be a happy person. The fact that I can't choose to be it seems to be quite independent of my desire to be it, because I seek justice and revenge. And it is not because I wanted or want something that doesn't belong to me, but because I put my best intentions which were only to be crushed by authoritative brainwashing in one case and arrogance in another. This world is so conditioned into everyone being dependent on everyone else there is very little personal freedom. I want my freedom not to be limited by somebody else's power but that is impossible. I hate the society and close-minded people they are so far behind.
 
@@ -192,7 +194,7 @@ What things am **I doing to achieve my commitments**?
 
 On the scale from 1-10 I'm at about 5. The thing that would make me feel at 6 next week would me writing more with left hand.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true"></a></p>
 
 ### 25-26 Tuesday-Wednesday (rqt w/ namecheap)
 
@@ -207,7 +209,7 @@ The advantage of having a namecheap API separate from _Expensive_ is that it is 
 
 The compression became important when I used to have internet with a 3G/4G sim card, and had a dynamic IP. These two things really have pushed me to implement white-list of the IP addressed via the web interface and thus features necessary to reduce the data load (a web page can be large). Having limited data was one of the best things happened in summer: it helped to see assumed perceived constants (free fast internet), and then kick of the improvements to the whole spectrum of software, including other packages as well (`expensive` needed `rqt` for compression, `rqt` was dependent on `idio` for testing of compression, `idio` required `documentary` for documentation of middleware using types and documentary made `alamode` possible).
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true" width="15"></a></p>
 
 Part of Tuesday was fighting the bug in the _VS Code_ when automatic type acquisition stopped working for no reason. It lead to installing types locally, such as `@types/koa-router` which repaired it, however it should not be like that -- if there is a feature for automatic installation of types in the background, it should be available. This is because _VS Code_ is the environment chosen for development, and is essentially a part of the _Art Deco Package_. For example, there is no need to install `eslint` to check code style, because it can be installed globally. Additionally, packages rely on the `@type {import('package).Type} Type` feature, which is presumably only available in the _VS Code_, therefore it's the chosen instrument to write code. It'd be a good thing to check what happens in other editors.
 
@@ -223,7 +225,7 @@ This is why the autocompletion testing service will be such a great tool. It wou
 
 In the meantime, `npm` does it what it does the best: to suck. I really want the `npm.sucks` domain but it's $199. On the other hand, I managed to renew LinkedIn premium for just £25 a month instead of £50, because just after I cancelled it the day before the free premium expired, I got an offer to renew it for half price :P Nice lifehack. I think it's important to have the premium account and although I only have 12 connections, it's showing I'm not short of money, which is a psychological advantage as well as an image one. £50/month was too much though for something I barely use.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true" width="15"></a></p>
 
 Wednesday was also spent on setting up VPN on a free tiered MS Server. After a few hours of struggling, I managed to get it working. There is limited information on the Web and a couple of good general articles about how to set up _OpenVPN_ on Windows, however none said in straight terms that the software firewall needs to be adjusted. Now I have a free VPN for a year after my $200 of free trial money for one month has burned out. What's good about Azure, is that there are actually 2 virtual machines I am running for free - one linux for web sites, and one windows for VPN.
 
@@ -231,7 +233,7 @@ Wednesday was also spent on setting up VPN on a free tiered MS Server. After a f
 
 It's also becoming more fun to program with the request library and the web server. For the last half a year, I was building the tools that I need to write software according to my standard of quality, and now they successfully work. Developing web-servers and integrations with APIs is a lot of fun because it involves other 3rd party tools and more information is entering the object-environment (sic) field. I can't wait to realise all my and my friends' ideas for websites with the _Idio_ web server. The next big part for it is to write the authentication package, which would connect to the database, allow registration and logging in, with email and text message confirmations. After this is done, it can be reused in any website with just simple installation. And the good thing is, it is very easy to implement. The idea of `@idio` is to create a package for each essential feature, and build a web server for any website in such an easy manner as similar to cooking: just add all ingredients together, perform a little bit of magic for preparing, and get a healthy hearty meal.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/9.svg?sanitize=true" width="15"></a></p>
 
 I wanted to write a book, _Art Deco Node.js_ with all up-to-date practices for developing a modern package, including how to use scopes, implement, test, document and maintain packages. It would take time but I could really shed some light into how I successfully approach the development process including what things are important (first and foremost, developer experience) and how to organise the routine of making Node.js software. The happy world for me would be where I just had my Tier 1 talent visa and didn't have to worry about finding other ways, without the horrible people who don't understand anything about Node criticizing my work without having ever created anything themselves. They are so miserable because of incapacity to really know what they are seeing and arrogantly failing to grasp the true meaning of what's going on. It's really hard to forgive and I don't think I can. It's great to think about more eternal things but when it gets cold and grey it becomes more about survival and hence less romantic and more real. I so badly wish they pay dearly for what things they have said. The plan is to finish with _NodeTools_ so that I can get some real experts on my side who'll confirm my true skill level.
 
@@ -283,7 +285,7 @@ __<a name="type-human">`Human`</a>__
 | -------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | __Character*__ | _Object.&lt;string, [Intelligence](#type-intelligence)&gt;_ | The sign of intelligence is that you are constantly wondering. Idiots are always dead sure about every damn thing they are doing in their life. |
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/9.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/10.svg?sanitize=true" width="15"></a></p>
 
 Spiritually, there is a thought that even if a person wronged you, it is the best to be grateful to him as he or she moved you closer to the understanding of the true meaning of life. Great many people won't wake up tomorrow, and it is an amazing thing to be alife just now. You do not have to grant people the privilige of making you angry or sad or happy, only you can choose it for yourself. The life is happening right now, and our bodies is the food that we've gathered, our minds is the impressions that we've gathered, but is it us? We can control our thoughts and even choose not to think.
 
@@ -293,7 +295,7 @@ Spiritually, there is a thought that even if a person wronged you, it is the bes
 - [ ] Work on the autocompletion testing.
 - [ ] Fix section breaks in _Documentary_ so that they don't all change after 22.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/10.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/11.svg?sanitize=true"></a></p>
 
 ### *24-28 Week*
 
@@ -305,7 +307,7 @@ There were new features to _Zoroaster_ with better mask testing of forks. It is 
 
 In addition, I fixed the `medium.com/art_deco` handle so that I can use it later to promote _NodeTools_. This will be the new name for the _Art Deco Package_ concept, because the tools are for Node.js, but they will follow the _Art Deco_ philosophy. There needs to be an explanation of what the characteristics of this philosophy are, such as minimal dependencies, separation of concerns into scopes, and full attention to the developer experience.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/11.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/12.svg?sanitize=true" width="15"></a></p>
 
 Since Node 10, there is going to be a way to create a coverage report using V8 coverage, such that no transformation of code is ever necessary. It is great because it removes the need to orchestrate code with markers used for coverage, and it means there does not need to be any _AST_ analyser. This has been implemented with [c8](https://github.com/bcoe/c8), however this package has the dependencies to transform into istanbul reports. I want to make my own tool, _Tutankhamun_ to be generate coverage reports, both client-side and as a service for GitHub integration. It could be hosted either at [Tutankhamun.io](Tutankhamun.io) or [Tutankhamen.co](Tutankhamen.co).
 
@@ -316,7 +318,7 @@ Moreover, one of the outcomes of last week was that _MNP_ as a website should al
 1. Adding a pixel tag to gather `referer` headers to see where users of packages come from (which search terms or tags).
 1. Breaking down the scoring algorithm used by the search engine to suggest improvements, such as *Close 5 issues to climb up 5 positions*.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/12.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/13.svg?sanitize=true" width="15"></a></p>
 
 The planning therefore is as follows:
 
@@ -342,7 +344,7 @@ The planning therefore is as follows:
 
 - [ ] `fork-context` package to spawn processes and send data to them. This could also be part of `zoroaster`'s fork mask property.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/13.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/14.svg?sanitize=true"></a></p>
 
 ### 21 Friday: IdioCore
 
@@ -360,7 +362,7 @@ In the end, I tried to record an [_Appshot_](https://github.com/artdecocode/apps
 - [ ] Improve _Appshot_ to have a web interface, with visual selection of windows, and selecting the cropping area of the window.
 - [ ] Display an error in the `window-info` package, such as when Python does not have `Quartz` library installed.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/14.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/15.svg?sanitize=true"></a></p>
 
 ### 20 Thursday: Watts
 
@@ -387,7 +389,7 @@ In the end, the rent must be paid, and I want to be somewhere where I don't have
 - [ ] Add parsing of types inside of functions in _Documentary_.
 - [ ] Think positively and make believe that it is easy to let go and be sure that the Universe will find the way to express its harmony once the negative thoughts are stopped being projected onto the matrix of the "organism-environment field" any more.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/15.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/16.svg?sanitize=true"></a></p>
 
 ### 19 Wednesday
 
@@ -429,7 +431,7 @@ This makes me to comment out that line, and start typing the property name again
 
 > <img src="images/hand2.svg" align="left" height="75"> The number of issues filed against _VS Code_ shows _Art Deco_'s commitment to the best developer experience using its packages. Suggestions for autocompletion is the best indicator of how developer-friendly a package is, because when developers can see those, they have reassurance that everything's going right. There is a general ongoing need to be able to test the suggestions in each package as a separate stage in testing.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/16.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/17.svg?sanitize=true" width="15"></a></p>
 
 Today, I started with getting the `@a-la/import` with the bug fix ready to get merged into _ÀLaMode_ by linking it to test in the `alamode`. This worked fine with the evaluation tests, however then I wanted to change the integration test to use a mask:
 
@@ -507,7 +509,7 @@ __<a name="type-you">`You`</a>__: It is you.
 | -------- | ------------------------------------------ | -------------------- |
 | __why*__ | _Promise.&lt;[Running](#type-running)&gt;_ | Why are you running? |
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/17.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/18.svg?sanitize=true" width="15"></a></p>
 
 <img src="images/cow.svg" align="right" height="150">After that was completed, I had to go out to town. On the way back I was hungry and because the place was next to a train station, there was a lot of kebab shops. It felt tempting because of the smell however there is just a general attitude that "I don't eat that". Although I might mentally want that food because I know that it taste nice, I don't physically want to have it. Instead, I can feel that being hungry is OK as a feeling on its own as well, reinforced by the idea that I consciously choose not to be part of the meat eating confusion. This idea gives strength, feeling of having a certain purpose of rejecting to be like the rest of the people.
 
@@ -529,7 +531,7 @@ To focus on positives, I like programming and I want to improve the quality of l
 
 - [ ] Create a tool to test autocompletion for each package. E.g., `salsa` testing used in the _VS Code_ software.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/18.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/19.svg?sanitize=true"></a></p>
 
 ### 18 Tuesday
 
@@ -572,7 +574,7 @@ There is also a possibility for the `docks` software which would allow to contro
 - [ ] Add `node-exiftool` to _Documentary_ to add copyright metadata to images.
 - [ ] Add a feature to _Documentary_ to be able to compile a text in SVG with a given font via spawning Chrome and drawing on canvas, therefore it should be a plugin since it's an advanced functionality which would require additional dependencies such as `Chrome Launcher`.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/19.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/20.svg?sanitize=true"></a></p>
 
 ### 17 Monday
 
@@ -588,7 +590,7 @@ Tags are important for discoverability, therefore I think the increase in downlo
 
 It would be useful to be able to see at which position in the search a package is against each of its tags. For the `documentation` tag, _Documentary_ is currently somewhere around 400 position, although it's a really great package. However, when it becomes more popular the position will improve as well, as the score is partly calculated according to popularity. _MNP_ should be able to analyse the tags, and it could be possible to install an image on a package page, which would call the _MNP_ server and tell the referrer of the page (i.e. which page people came from). This would show the search query and tags that people found the package from. I am not 100% sure it's technically possible, but there does not seem to be a proxy for an image, like it is on GitHub to prevent this sort of spying. Although it might be unethical, the method is only proposed to analyse and improve the marketing of packages using tags, and is not intended to breach privacy. In any way, NPM has a way to protect against this, but they never will because NPM sucks big time. Just the fact that they had to use somebody else's search engine for packages on their own website shows how desperate the company is.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/20.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/21.svg?sanitize=true" width="15"></a></p>
 
 | <a href='https://github.com/artdecocode/documentary'>![documentary documentation pre-processor](images/18-17/17.png)</a> |
 | ------------------------------------------------------------------------------------------------------------------------ |
@@ -736,7 +738,7 @@ The program accepts the following arguments:
 
 > <img src="images/18-17/factory.svg" align="right" height="70"> A mask **factory** is a function which takes the location of the mask file on a computer and creates a mask test suite. It is called a factory because it is used to create objects according to certain process. In case of _Zoroaster_, an object is a test suite which contains any number of tests, or other test suites.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/21.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/22.svg?sanitize=true" width="15"></a></p>
 
 It was nice to work during the day, and it felt like actual work rather than a full-time hobby because I started at 9am rather than some random time I used to start in previous weeks. I feel more organise with proper planning, however I don't believe it's that important because I was doing a lot of work before planning as well. This means that although there's more structure, it does not mean that the end result is any better. It's just the attitude, and also allows to take things more seriously, i.e. I felt pretty much like at a job, with a short lunch break and some tiredness by 5:30, almost ready to go home (from home lol). Despite that, the feeling was very positive because of the fact that I am not working for somebody building what they want so that I can spend half of the money on rent _etc_, but doing what _I_ love to do, and what _I_ find important, that is, my company. There was a sense of connection with the world as well and other people because everybody is just doing what they can. It's really this expanded perception from bird-view that is related to the awareness of how everything on the planet and in both human and animal societies is connected. It might be called collective unconsciousness because we all exist together and there is always cause and effect. To perceive this is like to slow down time and be able to take in the more general view of the whole planet. However, it might be just a trick of the mind due to fatigue.
 
@@ -792,7 +794,7 @@ This week can be structured in the similar way as the last one, with 2 days work
 
 With the _Art Deco_ JavaScript, it looks like the project could be ready for a good start soon. When _Documentary_ receives an animated terminal, _Zoroaster_ gets a well-composed example, and _À La Mode_ can transpile files on-the-fly, the functional part of the product comes to the release of the first version. It will be time then to think about which domain name to use for the concept, and devise a marketing plan for the best launch. However, it might have to wait before the work in the `labs` section gets implemented, including the `moderne` package, because it seems that it might be an essential part of the project.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/22.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
 
 
 
@@ -817,7 +819,7 @@ By the morning, when I wrote description of the section breaks, something unexpe
 
 > TIMER: 8.30 (without browsing for fonts, extracting SVGs)
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/0.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
 
 _Documentary_ works in 2 stages: first, it creates a stream of data from a directory with separate files. It pipes that stream into a _Toc_ generator, which extracts the titles so that it can construct the table of contents. The second stage is run afterwards, because when we see the `%TOC%` marker, we need to replace it with the table of contents, therefore we have to scan the whole document for headings first. But because I wanted to reuse the stream of data for both documentation and the Toc, I piped it into a dummy proxy stream, and paused it, and unpaused when the Toc was ready. The idea was that it would accumulate all data in a buffer, which would then be allowed to flow when the Toc is built. There was no problems with it before, but when there was too much data, it stopped working.
 
@@ -825,7 +827,7 @@ _Documentary_ works in 2 stages: first, it creates a stream of data from a direc
 
 The solution was to be generous and create a new stream of data from a directory rather than trying to reuse a buffered one. It worked right away after the implementation as well. The good point is that some other parts of the software were rewritten for easier understanding and maintenance in the future.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true" width="10"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true" width="10"></a></p>
 
 When I tried to compile _Documentary_ with _Alamode_, I faced a problem that the svg image files were also processed by the transpiler, which in addition added source maps to it. This shouldn't happen because only JS and JSX files need to be processed by it. Therefore, _Alamode_ also required an update which was added to it.
 
@@ -850,7 +852,7 @@ It is really interesting how orgs and package name spaces can work so well toget
 
 > TIMER: 10 hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>### 12 Wednesday
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>### 12 Wednesday
 
 Today I continued the research on Demimonde, and made an offer for the domain name I want. Gladly it is for sale and although the price is more than a few thousand, it is a reasonable price for that domain. Here is a link to some [notable sales](https://www.gritbrokerage.com/notable-sales).
 
@@ -991,13 +993,13 @@ Tomorrow, I will do more research for Demimonde to give fuller descriptions of c
 
 > Timer: 6.30 + 6.12 = 12.42 hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
 
 ### 11 Tuesday
 
 Market research for _Demimonde_ and coming up with ideas.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
 
 ### 10 Monday
 
@@ -1141,7 +1143,9 @@ The daily log could get its own domain, such as <a name="dailylogco">`dailylog.c
 
 > Timer: 9.30 + 3.12 = 12.42 Hours
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true"></a></p>
+
+
 
 
 
@@ -1245,7 +1249,7 @@ There's an [`asciinema`](https://asciinema.org/) project which allows to play te
 
 > Timer: (10.5 - 5.3 = 5.2) + (7.28) = _12 hours 30 min_
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true"></a></p>### 6 Thursday
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true"></a></p>### 6 Thursday
 
 The day started by continuing to find suitable packages to compile w/ `documentary`. [`json2svg`](https://www.npmjs.com/package/json2csv) looked good yesterday, however it had a screenshot of a PNG. Therefore it was decided to be a great feature for _Documentary_ to make screenshots of output from a terminal. The search revealed existence of [`ansi-to-svg`](https://github.com/F1LT3R/ansi-to-svg) which is not very popular, but amazing. To start off with, a [Yosemite UI Kit](https://www.sketchappsources.com/tag/yosemite.html) for Sketch was downloaded and the title bar exported as SVG.
 
@@ -1261,9 +1265,7 @@ Finished off with a complete good-looking terminal template which could also be 
 
 1. Timer: 8.38 + (5.3) = _13 hours 41 min_
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true"></a></p>
-
-### 5 Wednesday
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true"></a></p>### 5 Wednesday
 
 Working on hiding error stack for the `restream` and starting to implement it in the `erotic`. Figuring out that Node.js [hides an async stack](https://github.com/nodejs/node/issues/11865) behind `<anonymous>`, but only if error was thrown after the first `await`.
 
@@ -1325,7 +1327,7 @@ Error: example error after await
 
 **Future** Implement remembering the full async stack in `erotic`.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/9.svg?sanitize=true"></a></p>
 
 ## TODO
 
