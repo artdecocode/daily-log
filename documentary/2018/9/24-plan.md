@@ -25,9 +25,9 @@ The planning therefore is as follows:
 
 **LAST WEEK'S**
 
-- [ ] Publish _IdioCore_.
-- [ ] _Rqt_: make use of `@idio/core` in testing by updating the `https-context`.
-- [ ] _Expensive_: Use the new `@rqt/rqt` in the project, and allow to fetch Whois data.
+- [x] ~Publish _IdioCore_.~
+- [x] ~_Rqt_: make use of `@idio/core` in testing by updating the `https-context`.~
+- [x] ~_Expensive_: Use the new `@rqt/rqt` in the project, and allow to fetch Whois data.~
 
 **WORK**
 
@@ -43,6 +43,6 @@ The planning therefore is as follows:
 
 **LONG TERM**
 
-- [ ] `fork-context` package to spawn processes and send data to them. This could also be part of `zoroaster`'s fork mask property.
+- [x] ~`fork-context` package to spawn processes and send data to them. This could also be part of `zoroaster`'s fork mask property.~
 
 %~%
