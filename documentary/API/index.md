@@ -1,4 +1,4 @@
-## API
+<!-- ## API
 
 The package is available by importing its default function:
 
@@ -17,4 +17,4 @@ Call this function to get the result you want.
 
 %EXAMPLE: example/example.js, ../src => daily-log%
 
-%~%
+%~% -->
