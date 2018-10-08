@@ -12,8 +12,8 @@ There is still [the annoying bug](https://github.com/Microsoft/TypeScript/issues
 
 **EXPENSIVE**
 
-- [ ] Create `@rqt/namecheap` standalone API package.
-- [ ] Incorporate `@rqt/namecheap-web` and `@rqt/namecheap` into the package, refactor some code.
+- [x] ~Create `@rqt/namecheap` standalone API package.~
+- [x] ~Incorporate `@rqt/namecheap-web` and `@rqt/namecheap` into the package, refactor some code.~
 - [ ] Implement a feature to set DNS.
 
 **DOCUMENTARY**
@@ -38,6 +38,6 @@ There is still [the annoying bug](https://github.com/Microsoft/TypeScript/issues
 
 **DAILY LOG**
 
-- [ ] Archive the September section.
+- [x] ~Archive the September section.~
 
 %~%
