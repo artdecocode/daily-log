@@ -10,12 +10,11 @@
 
 ## Table Of Contents
 
-- [daily-log](#daily-log)
-  * [Table Of Contents](#table-of-contents)
-  * [October](#october)
-    * [1-5 Planning](#1-5-planning)
-  * [TODO](#todo)
-  * [Copyright](#copyright)
+- [Table Of Contents](#table-of-contents)
+- [October](#october)
+  * [1-5 Planning](#1-5-planning)
+- [TODO](#todo)
+- [Copyright](#copyright)
 
 <p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/1.svg?sanitize=true"></a></p>
 

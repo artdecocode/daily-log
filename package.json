@@ -10,7 +10,7 @@
     "test-all": "yarn-s test test-build",
     "test-watch": "yarn test -w",
     "lint": "eslint .",
-    "doc": "NODE_DEBUG=doc doc documentary -o README.md -h1 -r",
+    "doc": "NODE_DEBUG=doc doc documentary -o README.md -r",
     "doc-archive-sep": "NODE_DEBUG=doc doc documentary-archive/2018/9 -o archive/2018/9.md -h1 -r",
     "b": "alamode src -o build",
     "build": "yarn-s b doc",
