@@ -12,6 +12,7 @@
 
 - [Table Of Contents](#table-of-contents)
 - [October](#october)
+  * [26 - VS CODE CONFUSION](#26---vs-code-confusion)
   * [8-12 Planning](#8-12-planning)
   * [1-5 Planning](#1-5-planning)
 - [TODO](#todo)
@@ -32,6 +33,73 @@ The plan for this month is:
 1. In the first week, complete the missing features for _NodeTools_, pull up the missing bits in functionality and documentation and some minor bugs (e.g., finish updating expensive, section breaks changing); work on the `mnpjs.org` to analyse packages; create a website `nodetools.co` with bare content, outline the roadmap to version two;
 1. Then without timing, promote _NodeTools_ by getting in contact with multiple blogs / websites to ask them to write articles about it; write tutorials, content for the website.
 1. Focus on research, prototyping, a video and pitch for _Demimonde_.
+
+### 26 - VS CODE CONFUSION
+
+The JSDoc has to be commented out as well as the function to which it belongs otherwise the Vs Code will get confused.
+
+---
+
+Issue Type: <b>Bug</b>
+
+so i dev like
+
+```js
+/**
+ * Create a promise for a test function.
+ * @param {function} fn function to execute
+ * @return {Promise} A promise to execute function.
+ */
+// async function createTestPromise(fn) {
+//   const res = await fn()
+//   return res
+// }
+```
+
+and then i dev more like
+```js
+/**
+ * Asynchronously runs the test.
+ * @returns {string}
+ */
+const run = (options) => {
+  return 'ok'
+}
+```
+
+but what i see is that the function returns `Promise.<any>` in the doc
+
+![screen shot 2018-10-26 at 05 54 05](https://user-images.githubusercontent.com/21156791/47542016-1ae29480-d8e4-11e8-9133-4a3e7236929a.png)
+
+and this is because the source code was commented out but before it there was jsdoc. Is this my fault?
+
+VS Code version: Code - Insiders 1.28.0-insider (431ef9da3cf88a7e164f9d33bf62695e07c6c2a9, 2018-10-03T12:36:03.286Z)
+OS version: Darwin x64 15.6.0
+
+<details>
+<summary>System Info</summary>
+
+|Item|Value|
+|---|---|
+|CPUs|Intel(R) Core(TM)2 Duo CPU     P7350  @ 2.00GHz (2 x 2000)|
+|GPU Status|2d_canvas: unavailable_software<br>checker_imaging: disabled_off<br>flash_3d: unavailable_software<br>flash_stage3d: unavailable_software<br>flash_stage3d_baseline: unavailable_software<br>gpu_compositing: unavailable_software<br>multiple_raster_threads: disabled_off<br>native_gpu_memory_buffers: unavailable_software<br>rasterization: unavailable_software<br>video_decode: unavailable_software<br>video_encode: unavailable_software<br>webgl: unavailable_off<br>webgl2: unavailable_off|
+|Load (avg)|19, 13, 9|
+|Memory (System)|8.00GB (0.32GB free)|
+|Process Argv||
+|Screen Reader|no|
+|VM|0%|
+
+</details><details><summary>Extensions (3)</summary>
+
+Extension|Author (truncated)|Version
+---|---|---
+vscode-eslint|dba|1.6.1
+code-spell-checker|str|1.6.10
+vscode-wakatime|Wak|1.2.3
+
+
+</details>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
 ### 8-12 Planning
 
@@ -59,7 +127,7 @@ I also started to write a blog post on Medium about the _NodeTools_. There is an
   On the other hand, it helped me to understand once and for all that I'm not making my software for anyone else, I am making it for myself. If anyone wants to use it, they are welcome to it. It is not my job going around advertising and wanting people to download it. In fact, I want as little number of people to use my packages because otherwise they will be too mainstream and I will become like that person, so much stuck up. I want my software to be grunge and underworld, and if before I cared that people would want to download it, now I know for sure that all that I was doing, was first and foremost, for myself. I will do a due diligence, make a site for _NodeTools_, post a few links, but that's it.
 </details>
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true" width="15"></a></p>
 
 Therefore, this far the progress has been:
 
@@ -76,7 +144,7 @@ Therefore, this far the progress has been:
 - Worked on _Completest_ prototype by setting up a _TypeScript_ server and writing types in JSDoc.
 - Created a `forkFeed` (different from spoonfeed :P) to be able to send data to a child process via `stdin`, used it in _Zoroaster_.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true" width="15"></a></p>
 
 The plan for this week is:
 
@@ -90,7 +158,7 @@ The plan for this week is:
 - [ ] Create a scope for Documentary, move some rules there.
 - [ ] Finish at least one item from last week's list.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
 
 ### 1-5 Planning
 
@@ -134,7 +202,7 @@ There is still [the annoying bug](https://github.com/Microsoft/TypeScript/issues
 
 - [x] ~Archive the September section.~
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true"></a></p>
 
 ## TODO
 
