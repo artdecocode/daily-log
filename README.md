@@ -12,6 +12,7 @@
 
 - [Table Of Contents](#table-of-contents)
 - [October](#october)
+  * [30 Tuesday](#30-tuesday)
   * [26 - VS CODE CONFUSION](#26---vs-code-confusion)
   * [8-12 Planning](#8-12-planning)
   * [1-5 Planning](#1-5-planning)
@@ -33,6 +34,27 @@ The plan for this month is:
 1. In the first week, complete the missing features for _NodeTools_, pull up the missing bits in functionality and documentation and some minor bugs (e.g., finish updating expensive, section breaks changing); work on the `mnpjs.org` to analyse packages; create a website `nodetools.co` with bare content, outline the roadmap to version two;
 1. Then without timing, promote _NodeTools_ by getting in contact with multiple blogs / websites to ask them to write articles about it; write tutorials, content for the website.
 1. Focus on research, prototyping, a video and pitch for _Demimonde_.
+
+### 30 Tuesday
+
+Today, I have updated the MacOS to version 10.14 because otherwise the `func` binaries from Microsoft needed to debug, test and deploy extensions to the Azure don't work. I didn't update for a long time but it is great to see that the laptop which is almost 10 years old works just fine, and it is really the only thing I need for work, without any new expensive gadgets. The new dark theme UI looks good although the non-dark theme is not supported as much.
+
+![dark theme](images/18-10/dark.png)
+
+Programmaticaly, I refactored `splendid` so that it is easier to understand and configure (pages configuration is now separate from the app configuration and can be written with `export` keywords).
+
+Finally, I was able to set-up an ElasticSearch instance running on a Windows machine on Azure and install the metricbeats to send data from another VM to the first one. The data contains metrics data such as server load, and it achieve the long-standing want to run 2 VMs with Dokku apps on one and the ES on another.
+
+![kibana stat](images/18-10/stat.png)
+
+**TODO**
+
+- [ ] Write a tutorial explaining the benefits of 1-year free Azure subscription, Dokku and ElasticSearch, and how to make such a setup.
+- [ ] Migrate the Windows server to the Dokku net so that it is private.
+- [ ] Set up an Nginx proxy for Kibana.
+- [ ] Send the log data from Nginx to ElasticSearch also.
+
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
 ### 26 - VS CODE CONFUSION
 
@@ -99,7 +121,7 @@ vscode-wakatime|Wak|1.2.3
 
 
 </details>
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
 
 ### 8-12 Planning
 
@@ -127,7 +149,7 @@ I also started to write a blog post on Medium about the _NodeTools_. There is an
   On the other hand, it helped me to understand once and for all that I'm not making my software for anyone else, I am making it for myself. If anyone wants to use it, they are welcome to it. It is not my job going around advertising and wanting people to download it. In fact, I want as little number of people to use my packages because otherwise they will be too mainstream and I will become like that person, so much stuck up. I want my software to be grunge and underworld, and if before I cared that people would want to download it, now I know for sure that all that I was doing, was first and foremost, for myself. I will do a due diligence, make a site for _NodeTools_, post a few links, but that's it.
 </details>
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true" width="15"></a></p>
 
 Therefore, this far the progress has been:
 
@@ -144,7 +166,7 @@ Therefore, this far the progress has been:
 - Worked on _Completest_ prototype by setting up a _TypeScript_ server and writing types in JSDoc.
 - Created a `forkFeed` (different from spoonfeed :P) to be able to send data to a child process via `stdin`, used it in _Zoroaster_.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true" width="15"></a></p>
 
 The plan for this week is:
 
@@ -158,7 +180,7 @@ The plan for this week is:
 - [ ] Create a scope for Documentary, move some rules there.
 - [ ] Finish at least one item from last week's list.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true"></a></p>
 
 ### 1-5 Planning
 
@@ -202,7 +224,7 @@ There is still [the annoying bug](https://github.com/Microsoft/TypeScript/issues
 
 - [x] ~Archive the September section.~
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true"></a></p>
 
 ## TODO
 

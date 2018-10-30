@@ -36,10 +36,10 @@
   "homepage": "https://github.com/artdecocode/daily-log#readme",
   "devDependencies": {
     "@svag/lib": "2.0.0",
-    "alamode": "1.5.1",
+    "alamode": "1.6.0",
     "documentary": "1.20.1",
     "eslint-config-artdeco": "1.0.1",
     "yarn-s": "1.1.0",
-    "zoroaster": "3.6.1"
+    "zoroaster": "3.6.6"
   }
 }
