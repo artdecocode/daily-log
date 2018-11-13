@@ -11,6 +11,8 @@
 ## Table Of Contents
 
 - [Table Of Contents](#table-of-contents)
+- [November](#november)
+  * [12 Monday](#12-monday)
 - [October](#october)
   * [30 Tuesday](#30-tuesday)
   * [26 - VS CODE CONFUSION](#26---vs-code-confusion)
@@ -26,6 +28,21 @@
 
 
 
+
+## November
+
+In november, there is a competition entry to do.
+
+
+### 12 Monday
+
+Today I have updated the Windows virtual machine to have 2 GB of memory on a paid plan (£15/month) to be able to run _ElasticSearch_ smoothly. The performance of the machine shown by its responsiveness has improved. I also downloaded Kibana as a snapshot build locally. I tried to get its source code however it occupies a lot of disk space and cannot be sparsely downloaded (i.e., just the source folder that I wanted to compile with ÀLaMode instead of Babel). The `sparse.page` lambda function will allow to select git folders to download from GitHub. Moreover, Kibana's source contains _TypeScript_ code that also needs to be transpiled. I feel more confident now knowing how Kibana is developed and built.
+
+![elastic search](images/18-1#1/es.png)
+
+In addition, I fixed a bug in the `@rqt/aqt` package where a dependency was missing, but did not show as such because it was installed as a dev dependency.
+
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
 ## October
 
@@ -54,7 +71,7 @@ Finally, I was able to set-up an ElasticSearch instance running on a Windows mac
 - [ ] Set up an Nginx proxy for Kibana.
 - [ ] Send the log data from Nginx to ElasticSearch also.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
 
 ### 26 - VS CODE CONFUSION
 
@@ -121,7 +138,7 @@ vscode-wakatime|Wak|1.2.3
 
 
 </details>
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
 
 ### 8-12 Planning
 
@@ -149,7 +166,7 @@ I also started to write a blog post on Medium about the _NodeTools_. There is an
   On the other hand, it helped me to understand once and for all that I'm not making my software for anyone else, I am making it for myself. If anyone wants to use it, they are welcome to it. It is not my job going around advertising and wanting people to download it. In fact, I want as little number of people to use my packages because otherwise they will be too mainstream and I will become like that person, so much stuck up. I want my software to be grunge and underworld, and if before I cared that people would want to download it, now I know for sure that all that I was doing, was first and foremost, for myself. I will do a due diligence, make a site for _NodeTools_, post a few links, but that's it.
 </details>
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true" width="15"></a></p>
 
 Therefore, this far the progress has been:
 
@@ -166,7 +183,7 @@ Therefore, this far the progress has been:
 - Worked on _Completest_ prototype by setting up a _TypeScript_ server and writing types in JSDoc.
 - Created a `forkFeed` (different from spoonfeed :P) to be able to send data to a child process via `stdin`, used it in _Zoroaster_.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true" width="15"></a></p>
 
 The plan for this week is:
 
@@ -180,7 +197,7 @@ The plan for this week is:
 - [ ] Create a scope for Documentary, move some rules there.
 - [ ] Finish at least one item from last week's list.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true"></a></p>
 
 ### 1-5 Planning
 
@@ -224,7 +241,7 @@ There is still [the annoying bug](https://github.com/Microsoft/TypeScript/issues
 
 - [x] ~Archive the September section.~
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true"></a></p>
 
 ## TODO
 
