@@ -11,6 +11,7 @@
 ## Table Of Contents
 
 - [Table Of Contents](#table-of-contents)
+- [today 3 Dec](#today-3-dec)
 - [November](#november)
   * [12 Monday](#12-monday)
 - [October](#october)
@@ -29,6 +30,16 @@
 
 
 
+## today 3 Dec
+
+today is an interesting day because i had a day off and according to the studies, men and women perform better on the first day of the week. It means that I am anticipating the result of 2 of the latest bug reports in the google closure compiler repository: one when the dead code was not totally eliminated, but i predict that the outcome of that would be to pass a special flag indicating the entry module. The second issue with the google closure compiler is that the import from an ES6 module a common Js module (ie. `import { test } from 'test'` _FROM_ `module.exports.test = function testIO(){}`) does not produce the correct result such as the required method being imported.
+
+ This is the question of interoperability of the module systems in the compiler and is described in its wiki which says "please don't do it" therefore I think Google should seriously reconsider their terms because to be the modern start up like Art Deco, one has to write `import` statements, however the modules get transpiled before publishing, because Node.js does not understand the `import` syntax.
+
+I don't know what they will say. I know that it is sure nice to sit in from of my computer again after a week+ of not attending any gadgets mostly. Needs must.
+
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
+
 ## November
 
 In november, there is a competition entry to do.
@@ -42,7 +53,7 @@ Today I have updated the Windows virtual machine to have 2 GB of memory on a pai
 
 In addition, I fixed a bug in the `@rqt/aqt` package where a dependency was missing, but did not show as such because it was installed as a dev dependency.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
 
 ## October
 
@@ -71,7 +82,7 @@ Finally, I was able to set-up an ElasticSearch instance running on a Windows mac
 - [ ] Set up an Nginx proxy for Kibana.
 - [ ] Send the log data from Nginx to ElasticSearch also.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
 
 ### 26 - VS CODE CONFUSION
 
@@ -138,7 +149,7 @@ vscode-wakatime|Wak|1.2.3
 
 
 </details>
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
 
 ### 8-12 Planning
 
@@ -166,7 +177,7 @@ I also started to write a blog post on Medium about the _NodeTools_. There is an
   On the other hand, it helped me to understand once and for all that I'm not making my software for anyone else, I am making it for myself. If anyone wants to use it, they are welcome to it. It is not my job going around advertising and wanting people to download it. In fact, I want as little number of people to use my packages because otherwise they will be too mainstream and I will become like that person, so much stuck up. I want my software to be grunge and underworld, and if before I cared that people would want to download it, now I know for sure that all that I was doing, was first and foremost, for myself. I will do a due diligence, make a site for _NodeTools_, post a few links, but that's it.
 </details>
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true" width="15"></a></p>
 
 Therefore, this far the progress has been:
 
@@ -183,7 +194,7 @@ Therefore, this far the progress has been:
 - Worked on _Completest_ prototype by setting up a _TypeScript_ server and writing types in JSDoc.
 - Created a `forkFeed` (different from spoonfeed :P) to be able to send data to a child process via `stdin`, used it in _Zoroaster_.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true" width="15"></a></p>
 
 The plan for this week is:
 
@@ -197,7 +208,7 @@ The plan for this week is:
 - [ ] Create a scope for Documentary, move some rules there.
 - [ ] Finish at least one item from last week's list.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true"></a></p>
 
 ### 1-5 Planning
 
@@ -241,7 +252,7 @@ There is still [the annoying bug](https://github.com/Microsoft/TypeScript/issues
 
 - [x] ~Archive the September section.~
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/9.svg?sanitize=true"></a></p>
 
 ## TODO
 
