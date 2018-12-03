@@ -20,4 +20,8 @@ Apparently, it is not possible by design
 
 ![closure reply](images/18/closure.png)
 
+God Bless ÀlaMode that I can transpile into common.js first and make stuff work, i.e., use the `build` directory that normally would have been published. On the other hand, I can check whether the compiler will even respect the standard where built-in modules can have named exports.
+
+- [ ] Check whether closure accepts named built-in exports.
+
 %~%
