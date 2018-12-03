@@ -14,4 +14,10 @@ today is an interesting day because i had a day off and according to the studies
 
 I don't know what they will say. I know that it is sure nice to sit in from of my computer again after a week+ of not attending any gadgets mostly. Needs must.
 
+**UPD**
+
+Apparently, it is not possible by design
+
+![closure reply](images/18/closure.png)
+
 %~%
