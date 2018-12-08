@@ -11,6 +11,7 @@
 ## Table Of Contents
 
 - [Table Of Contents](#table-of-contents)
+- [Saturday the 8th](#saturday-the-8th)
 - [today 3 Dec](#today-3-dec)
 - [November](#november)
   * [12 Monday](#12-monday)
@@ -29,6 +30,22 @@
 
 
 
+
+## Saturday the 8th
+
+So the week has been productive and I published 3 new articles on Medium:
+
+- [x] dec 4 [How To Compile Node.js Scripts With Google Closure Compiler](https://medium.com/@art_deco/the-possibility-of-compiling-node-js-3e91ade50e51)
+- [x] dec 6 [artdeco/kibana: The Smallest Kibana Docker Image With Authorisation](https://medium.com/@art_deco/artdeco-kibana-the-smallest-kibana-docker-image-with-authorisation-ee4ba838dfae)
+- [x] dec 7 [Building Minimal Authorized Kinaba Image Oneself For Peace Of Mind in 2 Steps.](https://medium.com/@art_deco/building-minimal-authorized-kinaba-image-oneself-for-peace-of-mind-in-2-steps-1d2f1497b95a)
+
+The more articles to write are:
+
+- [ ] Compiling the script that has foreign dependencies in Closure Compiler.
+
+The 2 keys on the keyboard broke, the left `ctrl` and `option`. The day I lost control. I think this is because I slept on them, and now they refuse to be back. But I swear I pressed cmd-option-save on the left by the habit once (i've to use the right option now) and it worked (saved all files)! maybe it's not the lost case and the glitch of the macintosh. The new os is 10.14 because one can't always stay on 10.10 or something. It was not possible before and the OS would not run on macbooks older than 2012 but smart kind people updated the drives and made it possible. I even didn't have to burn any CDs -- because I have 2 hard drives, I mounted the image on one of them, and booted from it.
+
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
 
 ## today 3 Dec
 
@@ -56,7 +73,7 @@ God Bless ÀlaMode that I can transpile into common.js first and make stuff work
 
 - [ ] Check whether closure accepts named built-in exports.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/2.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
 
 ## November
 
@@ -71,7 +88,7 @@ Today I have updated the Windows virtual machine to have 2 GB of memory on a pai
 
 In addition, I fixed a bug in the `@rqt/aqt` package where a dependency was missing, but did not show as such because it was installed as a dev dependency.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/3.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
 
 ## October
 
@@ -100,7 +117,7 @@ Finally, I was able to set-up an ElasticSearch instance running on a Windows mac
 - [ ] Set up an Nginx proxy for Kibana.
 - [ ] Send the log data from Nginx to ElasticSearch also.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/4.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
 
 ### 26 - VS CODE CONFUSION
 
@@ -167,7 +184,7 @@ vscode-wakatime|Wak|1.2.3
 
 
 </details>
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/5.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true"></a></p>
 
 ### 8-12 Planning
 
@@ -195,7 +212,7 @@ I also started to write a blog post on Medium about the _NodeTools_. There is an
   On the other hand, it helped me to understand once and for all that I'm not making my software for anyone else, I am making it for myself. If anyone wants to use it, they are welcome to it. It is not my job going around advertising and wanting people to download it. In fact, I want as little number of people to use my packages because otherwise they will be too mainstream and I will become like that person, so much stuck up. I want my software to be grunge and underworld, and if before I cared that people would want to download it, now I know for sure that all that I was doing, was first and foremost, for myself. I will do a due diligence, make a site for _NodeTools_, post a few links, but that's it.
 </details>
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/6.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true" width="15"></a></p>
 
 Therefore, this far the progress has been:
 
@@ -212,7 +229,7 @@ Therefore, this far the progress has been:
 - Worked on _Completest_ prototype by setting up a _TypeScript_ server and writing types in JSDoc.
 - Created a `forkFeed` (different from spoonfeed :P) to be able to send data to a child process via `stdin`, used it in _Zoroaster_.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/7.svg?sanitize=true" width="15"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true" width="15"></a></p>
 
 The plan for this week is:
 
@@ -226,7 +243,7 @@ The plan for this week is:
 - [ ] Create a scope for Documentary, move some rules there.
 - [ ] Finish at least one item from last week's list.
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/8.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/9.svg?sanitize=true"></a></p>
 
 ### 1-5 Planning
 
@@ -270,7 +287,7 @@ There is still [the annoying bug](https://github.com/Microsoft/TypeScript/issues
 
 - [x] ~Archive the September section.~
 
-<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/9.svg?sanitize=true"></a></p>
+<p align="center"><a href="#table-of-contents"><img src=".documentary/section-breaks/10.svg?sanitize=true"></a></p>
 
 ## TODO
 
